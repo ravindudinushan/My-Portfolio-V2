@@ -21,7 +21,7 @@ export function Navbar() {
         </a>
 
         <div className="hidden lg:flex space-x-10 mr-8 text-1xl font-semibold">
-          <Link to="/My-Portfolio-V2/home" className="hover:text-primary transition-colors duration-300">HOME</Link>
+          <Link to="/My-Portfolio-V2/home" className="hover:text-primary  transition-colors duration-300">HOME</Link>
           <Link to="/My-Portfolio-V2/about" className="hover:text-primary transition-colors duration-300">ABOUT</Link>
           <Link to="/My-Portfolio-V2/skills" className="hover:text-primary transition-colors duration-300">SKILLS</Link>
           <Link to="/My-Portfolio-V2/services" className="hover:text-primary transition-colors duration-300">SERVICES</Link>
