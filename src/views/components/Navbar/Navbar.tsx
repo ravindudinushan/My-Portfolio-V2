@@ -16,7 +16,7 @@ export function Navbar() {
         <a href="https://github.com/ravindudinushan" target="_blank" rel="noopener noreferrer">
           <div className="flex items-center">
             <img src={logo} className="Nav-logo ml-5 mr-5 mt-2" alt="Nav-logo" />
-            <div className="text-2xl font-bold">P O R T F O <span className="text-primary">L I O</span></div>
+            <div className="text-2xl font-bold">P O R T F O <span className="text-primary">L I O .</span></div>
           </div>
         </a>
 
