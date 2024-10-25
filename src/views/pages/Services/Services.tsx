@@ -20,9 +20,8 @@ export function Services() {
                     </div>
                     <div className="service-item p-4 sm:p-6 rounded-lg shadow-lg border border-primary hover:scale-105 transition-transform 
                     duration-300">
-                        <h2 className="text-xl sm:text-2xl font-bold">Consulting</h2>
-                        <p className="mt-2 text-sm sm:text-base">Offering expert advice and insights on web development, project planning, and
-                            best practices.</p>
+                        <h2 className="text-xl sm:text-2xl font-bold">Freelancer</h2>
+                        <p className="mt-2 text-sm sm:text-base">Are you tried with your assignment , project ? So give it to me.</p>
                     </div>
                 </div>
             </div>
