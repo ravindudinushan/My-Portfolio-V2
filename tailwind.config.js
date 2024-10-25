@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        'black': '#1c1c22',
-        'green': '#00ff99',
+        'bg': '#1c1c22',
+        'primary': '#00ff99',
       },
       textColor: {
-        'black': '#1c1c22',
-        'green': '#00ff99',
+        'bg': '#1c1c22',
+        'primary': '#00ff99',
       },
       borderColor: {
-        'black': '#1c1c22',
-        'green': '#00ff99',
+        'bg': '#1c1c22',
+        'primary': '#00ff99',
       },
     },
   },
