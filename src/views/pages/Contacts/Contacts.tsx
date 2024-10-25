@@ -1,11 +1,11 @@
 export function Contacts() {
     return (
-        <div className="flex flex-col min-h-screen bg-darkBlue text-white pb-24 items-center justify-center">
+        <div className="flex flex-col min-h-screen bg-bg text-white pb-24 items-center justify-center">
             <div className="flex-grow max-w-4xl text-center space-y-8 pt-20 md:pt-24">
                 <h1 className="text-3xl md:text-5xl font-extrabold text-primary">Contact Me</h1>
                 <p className="text-base md:text-lg leading-relaxed">I offer a range of services to help you bring your ideas to life.
                     Whether you need a website, app, or design consultation, I'm here to help.</p>
-                <form className="bg-darkBlue p-4 md:p-6 rounded-lg shadow-lg">
+                <form className="bg-bg p-4 md:p-6 rounded-lg shadow-lg">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label htmlFor="name" className="block text-base md:text-lg font-semibold mb-2">Name</label>
@@ -23,7 +23,7 @@ export function Contacts() {
                         <textarea id="message" name="message" rows={4} className="w-full p-2 rounded-lg bg-gray-800 border 
                         border-primary text-white placeholder-gray-400" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" className="mt-4 bg-primary text-darkBlue px-4 md:px-6 py-2 md:py-3 rounded-lg 
+                    <button type="submit" className="mt-4 bg-primary text-bg px-4 md:px-6 py-2 md:py-3 rounded-lg 
                     font-semibold shadow-lg hover:scale-105 transition duration-300">Send Message</button>
                 </form>
                 <div className="mt-8">

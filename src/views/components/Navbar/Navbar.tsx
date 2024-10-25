@@ -11,7 +11,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-darkBlue text-white p-2 fixed w-full z-50">
+    <nav className="bg-bg text-white p-2 fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="https://github.com/ravindudinushan" target="_blank" rel="noopener noreferrer">
           <div className="flex items-center">
@@ -36,7 +36,7 @@ export function Navbar() {
         </div>
       </div>
 
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-darkBlue`}>
+      <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-bg`}>
         <div className="flex flex-col items-center space-y-5 py-5">
           <Link to="/My-Portfolio-V2/home" onClick={toggleMenu} className="hover:text-primary transition-colors duration-300">HOME</Link>
           <Link to="/My-Portfolio-V2/about" onClick={toggleMenu} className="hover:text-primary transition-colors duration-300">ABOUT</Link>

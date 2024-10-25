@@ -1,6 +1,6 @@
 export function Services() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-darkBlue text-white p-4 sm:p-8 lg:pt-24 lg:pb-24 pt-16">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-bg text-white p-4 sm:p-8 lg:pt-24 lg:pb-24 pt-16">
             <div className="max-w-4xl text-center space-y-8">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-4">My Services</h1>
                 <p className="text-base sm:text-lg leading-relaxed mb-6">I offer a range of services to help bring your ideas to life.
