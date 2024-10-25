@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        'darkBlue': '#000a1f',
-        'neonBlue': '#00c7ff',
+        'black': '#1c1c22',
+        'green': '#00ff99',
       },
       textColor: {
-        'darkBlue': '#000a1f',
-        'neonBlue': '#00c7ff',
+        'black': '#1c1c22',
+        'green': '#00ff99',
       },
       borderColor: {
-        'darkBlue': '#000a1f',
-        'neonBlue': '#00c7ff',
+        'black': '#1c1c22',
+        'green': '#00ff99',
       },
     },
   },
