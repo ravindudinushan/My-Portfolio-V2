@@ -8,7 +8,7 @@ export function Skills() {
                 <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     <i className="fab fa-java fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="Java"></i> {/* Java */}
                     <i className="fab fa-js-square fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="JavaScript"></i> {/* JavaScript */}
-                    <i className="fab fa-java fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="Kotlin"></i> {/* Kotlin */}
+                    <i className="fab fa-react fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="Kotlin"></i> {/* React Native */}
                     <i className="fab fa-python fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="Python"></i> {/* Python */}
                     <i className="fab fa-html5 fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="HTML"></i> {/* HTML */}
                     <i className="fab fa-css3-alt fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300" title="CSS"></i> {/* CSS */}
