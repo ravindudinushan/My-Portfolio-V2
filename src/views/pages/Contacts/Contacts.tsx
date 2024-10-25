@@ -37,6 +37,14 @@ export function Contacts() {
                             className="text-primary hover:scale-105 transition duration-300 text-lg">
                             <i className="fab fa-github fa-2x"></i>
                         </a>
+                        <a href="https://web.facebook.com/people/Ravindu-Dinushan/pfbid0A2QTtgYTDGJfQJADQtmtWWkiVYpXRSwVwbodBQGrMRDdN1QrtmHS9fBm7kE8tdDol/" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/Ravindu9966" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-x-twitter fa-2x"></i>
+                        </a>
                     </div>
                 </div>
             </div>

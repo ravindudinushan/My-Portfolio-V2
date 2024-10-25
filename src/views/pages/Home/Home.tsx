@@ -13,6 +13,26 @@ export function Home() {
                     <a href={CV} download="Ravindu-Dinushan-Resume" className="bg-bg text-primary border 
                     border-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition duration-300">Download CV</a>
                 </div>
+                <div className="mt-8">
+                    <div className="flex justify-center space-x-4 md:space-x-6">
+                        <a href="https://www.linkedin.com/in/ravindu-dinushan-60709227b/" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/ravindudinushan" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://web.facebook.com/people/Ravindu-Dinushan/pfbid0A2QTtgYTDGJfQJADQtmtWWkiVYpXRSwVwbodBQGrMRDdN1QrtmHS9fBm7kE8tdDol/" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/Ravindu9966" target="_blank" rel="noopener noreferrer"
+                            className="text-primary hover:scale-105 transition duration-300 text-lg">
+                            <i className="fab fa-x-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );
