@@ -8,12 +8,23 @@ import GymAbout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 
 import GymWorkout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185314.png';
 import GymShedule from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185342.png';
 
-//ToDo List
+// ToDo List
 import ToDo1 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185544.png';
 import ToDo2 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185807.png';
 
-//Currency exchange tracker and analyzer 
+// Currency exchange tracker and analyzer 
 import Currency from '../../../assets/images/projects/currencies/Screenshot 2024-10-25 190157.png';
+
+// Car Rental
+import CarRental1 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 165810.png';
+import CarRental2 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 165855.png';
+import CarRental3 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 165931.png';
+import CarRental4 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 165956.png';
+import CarRental5 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170023.png';
+import CarRental6 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170040.png';
+import CarRental7 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170056.png';
+import CarRental8 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170108.png';
+import CarRental9 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170117.png';
 
 // Shoe Shop Management System
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
@@ -168,6 +179,19 @@ const ToDoImages = [
 const CurrencyImages = [
   // Currency exchange tracker and analyzer 
   Currency,
+];
+
+const CarRentalImages = [
+  // Car Rental 
+  CarRental1,
+  CarRental2,
+  CarRental3,
+  CarRental4,
+  CarRental5,
+  CarRental6,
+  CarRental7,
+  CarRental8,
+  CarRental9,
 ];
 
 const shoeShopImages = [
@@ -329,6 +353,7 @@ export function Projects() {
   const [currentGymImage, setcurrentGymImage] = useState(0);
   const [currentToDoImage, setCurrentToDoImage] = useState(0);
   const [currentCurrencyImage, setCurrentCurrencyImage] = useState(0);
+  const [currentCarRentalImage, setCurrentCarRentalImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
@@ -400,6 +425,17 @@ export function Projects() {
           currentImageIndex={currentCurrencyImage}
           onNextImage={() => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length)}
           onPreviousImage={() => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length)}
+          onClickImage={() => openModal('currency')} />
+
+        <ProjectCard projectName="Car Rental Website"
+          description="This application allows you to easily convert currencies based on the latest exchange rates. Whether you're planning 
+          a trip, managing your finances, or simply curious about the value of your money in different currencies, this tool is here to help."
+          technologies={["HTML", "CSS", "Javascript", "Bootstrap"]}
+          githubLink="https://github.com/ravindudinushan/Car-Rental"
+          images={CarRentalImages}
+          currentImageIndex={currentCarRentalImage}
+          onNextImage={() => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length)}
+          onPreviousImage={() => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length)}
           onClickImage={() => openModal('currency')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
