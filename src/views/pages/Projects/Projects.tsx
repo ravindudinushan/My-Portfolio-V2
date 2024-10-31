@@ -428,8 +428,7 @@ export function Projects() {
           onClickImage={() => openModal('currency')} />
 
         <ProjectCard projectName="Car Rental Website"
-          description="This application allows you to easily convert currencies based on the latest exchange rates. Whether you're planning 
-          a trip, managing your finances, or simply curious about the value of your money in different currencies, this tool is here to help."
+          description="This is Responsive Premium Car Rental Front-End Website. Using HTML, CSS, JavaScript & Bootstrap"
           technologies={["HTML", "CSS", "Javascript", "Bootstrap"]}
           githubLink="https://github.com/ravindudinushan/Car-Rental"
           images={CarRentalImages}
