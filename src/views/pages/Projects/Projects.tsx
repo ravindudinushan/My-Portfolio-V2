@@ -8,6 +8,10 @@ import GymAbout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 
 import GymWorkout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185314.png';
 import GymShedule from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185342.png';
 
+//ToDo List
+import ToDo1 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185544.png';
+import ToDo2 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185807.png';
+
 // Shoe Shop Management System
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
@@ -145,11 +149,17 @@ import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/Or
 import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
 
 const GymImage = [
-  // LaaravelPOSTheme,
+  // Gym App,
   GymHome,
   GymAbout,
   GymWorkout,
   GymShedule,
+];
+
+const ToDo = [
+  // ToDo List
+  ToDo1,
+  ToDo2,
 ];
 
 const shoeShopImages = [
@@ -350,9 +360,10 @@ export function Projects() {
           onClickImage={() => openModal('gym')} />
 
         <ProjectCard projectName="My Portfolio V2"
-          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights my expertise in creating dynamic and responsive web applications with a modern touch."
-          technologies={["React", "Tailwind CSS"]}
-          githubLink="https://github.com/Ravindu-Dinushan/My-Portfolio-V2"
+          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights 
+          my expertise in creating dynamic and responsive web applications with a modern touch."
+          technologies={["React", "Vite", "Tailwind CSS"]}
+          githubLink="https://github.com/ravindudinushan/My-Portfolio-V2"
           images={portfolioV2Images}
           currentImageIndex={currentPortfolioV2Image}
           onNextImage={() => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length)}
