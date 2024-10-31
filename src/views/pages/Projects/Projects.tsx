@@ -9,7 +9,6 @@ import GymWorkout from '../../../assets/images/projects/Gym/Screenshot 2024-10-2
 import GymShedule from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185342.png';
 
 // Shoe Shop Management System
-// import ShoeShopTheme from '../../../assets/images/projects/Shoe-Shop/Theme.png';
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
 import ShoeShopSignIn from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
@@ -104,16 +103,12 @@ import Connect4GamePlay from '../../../assets/images/projects/Connect-4-Game/Gam
 import Connect4Codes from '../../../assets/images/projects/Connect-4-Game/Codes.png';
 
 // Portfolio v2
-// import PortfolioV2Theme from '../../../assets/images/projects/My-Portfolio-V2/Theme.png';
-import PortfolioV2Home from '../../../assets/images/projects/My-Portfolio-V2/Home.png';
-import PortfolioV2About from '../../../assets/images/projects/My-Portfolio-V2/About.png';
-import PortfolioV2Skills from '../../../assets/images/projects/My-Portfolio-V2/Skills.png';
-import PortfolioV2Projects1 from '../../../assets/images/projects/My-Portfolio-V2/Projects1.png';
-import PortfolioV2Projects2 from '../../../assets/images/projects/My-Portfolio-V2/Projects2.png';
-import PortfolioV2Projects3 from '../../../assets/images/projects/My-Portfolio-V2/Projects3.png';
-import PortfolioV2Services from '../../../assets/images/projects/My-Portfolio-V2/Services.png';
-import PortfolioV2Contacts from '../../../assets/images/projects/My-Portfolio-V2/Contacts.png';
-import PortfolioV2Codes from '../../../assets/images/projects/My-Portfolio-V2/Codes.png';
+import PortfolioV2Home from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101148.png';
+import PortfolioV2About from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101157.png';
+import PortfolioV2Skills from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101210.png';
+import PortfolioV2Projects from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101227.png';
+import PortfolioV2Services from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101258.png';
+import PortfolioV2Contacts from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101323.png';
 
 // student Management System - CLI
 // import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
@@ -266,12 +261,9 @@ const portfolioV2Images = [
   PortfolioV2Home,
   PortfolioV2About,
   PortfolioV2Skills,
-  PortfolioV2Projects1,
-  PortfolioV2Projects2,
-  PortfolioV2Projects3,
+  PortfolioV2Projects,
   PortfolioV2Services,
   PortfolioV2Contacts,
-  PortfolioV2Codes,
 ];
 
 const studentCLIImages = [
@@ -356,6 +348,16 @@ export function Projects() {
           onNextImage={() => setcurrentGymImage((prev) => (prev + 1) % GymImage.length)}
           onPreviousImage={() => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length)}
           onClickImage={() => openModal('gym')} />
+
+        <ProjectCard projectName="My Portfolio V2"
+          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights my expertise in creating dynamic and responsive web applications with a modern touch."
+          technologies={["React", "Tailwind CSS"]}
+          githubLink="https://github.com/Ravindu-Dinushan/My-Portfolio-V2"
+          images={portfolioV2Images}
+          currentImageIndex={currentPortfolioV2Image}
+          onNextImage={() => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length)}
+          onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
+          onClickImage={() => openModal('portfoliov2')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -442,16 +444,6 @@ export function Projects() {
           onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
           onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
           onClickImage={() => openModal('portfolio')} />
-
-        <ProjectCard projectName="My Portfolio V2"
-          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights my expertise in creating dynamic and responsive web applications with a modern touch."
-          technologies={["React", "Tailwind CSS"]}
-          githubLink="https://github.com/Ravindu-Dinushan/My-Portfolio-V2"
-          images={portfolioV2Images}
-          currentImageIndex={currentPortfolioV2Image}
-          onNextImage={() => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length)}
-          onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
-          onClickImage={() => openModal('portfoliov2')} />
 
         <ProjectCard projectName="Connect 4 Game"
           description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
