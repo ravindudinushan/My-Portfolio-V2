@@ -26,6 +26,28 @@ import CarRental7 from '../../../assets/images/projects/CarRental/Screenshot 202
 import CarRental8 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170108.png';
 import CarRental9 from '../../../assets/images/projects/CarRental/Screenshot 2024-09-17 170117.png';
 
+//E-Commerce Website
+import ECommerce1 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221519.png';
+import ECommerce2 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221552.png';
+import ECommerce3 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221615.png';
+import ECommerce4 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221643.png';
+import ECommerce5 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221705.png';
+import ECommerce6 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221843.png';
+import ECommerce7 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221918.png';
+import ECommerce8 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 221937.png';
+import ECommerce9 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222055.png';
+import ECommerce10 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222112.png';
+import ECommerce11 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222135.png';
+import ECommerce12 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222206.png';
+import ECommerce13 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222223.png';
+import ECommerce14 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222245.png';
+import ECommerce15 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222301.png';
+import ECommerce16 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222317.png';
+import ECommerce17 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222400.png';
+import ECommerce18 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222426.png';
+import ECommerce19 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222705.png';
+import ECommerce20 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222737.png';
+
 // Shoe Shop Management System
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
@@ -194,6 +216,29 @@ const CarRentalImages = [
   CarRental9,
 ];
 
+const ECommerceImages = [
+  ECommerce1,
+  ECommerce2,
+  ECommerce3,
+  ECommerce4,
+  ECommerce5,
+  ECommerce6,
+  ECommerce7,
+  ECommerce8,
+  ECommerce9,
+  ECommerce10,
+  ECommerce11,
+  ECommerce12,
+  ECommerce13,
+  ECommerce14,
+  ECommerce15,
+  ECommerce16,
+  ECommerce17,
+  ECommerce18,
+  ECommerce19,
+  ECommerce20,
+];
+
 const shoeShopImages = [
   // ShoeShopTheme,
   ShoeShopHome,
@@ -354,6 +399,7 @@ export function Projects() {
   const [currentToDoImage, setCurrentToDoImage] = useState(0);
   const [currentCurrencyImage, setCurrentCurrencyImage] = useState(0);
   const [currentCarRentalImage, setCurrentCarRentalImage] = useState(0);
+  const [currentECommerceImage, setCurrentECommerceImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
@@ -436,6 +482,19 @@ export function Projects() {
           onNextImage={() => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length)}
           onPreviousImage={() => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length)}
           onClickImage={() => openModal('carRental')} />
+
+        <ProjectCard projectName="E-Commerce Website"
+          description="A comprehensive e-commerce platform built with the MERN stack (MongoDB, Express.js, React, and Node.js), incorporating 
+          JWT authentication for secure user sessions. Styled with Tailwind CSS, this website provides users with a smooth and modern shopping 
+          experience. Key features include user authentication, product browsing, shopping cart, and secure checkout. The platform is optimized 
+          for responsiveness and performance, ensuring a seamless experience across devices."
+          technologies={["React", "NodeJs", "ExpressJs", "MongoDB", "Tailwind CSS", "JSON Web Token (JWT)"]}
+          githubLink="https://github.com/ravindudinushan/E-Commerce-Web-Site"
+          images={ECommerceImages}
+          currentImageIndex={currentECommerceImage}
+          onNextImage={() => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length)}
+          onPreviousImage={() => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length)}
+          onClickImage={() => openModal('ecommerce')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -605,7 +664,8 @@ export function Projects() {
                                         currentProject === 'todo' ? ToDoImages[currentToDoImage] :
                                           currentProject === 'currency' ? CurrencyImages[currentCurrencyImage] :
                                             currentProject === 'carRental' ? CarRentalImages[currentCarRentalImage] :
-                                              currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+                                              currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
+                                                currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
