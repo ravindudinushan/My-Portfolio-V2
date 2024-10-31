@@ -686,7 +686,8 @@ export function Projects() {
                                         currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length) :
                                           currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length) :
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length) :
-                                              currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
+                                                currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -707,7 +708,8 @@ export function Projects() {
                                         currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length) :
                                           currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length) :
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length) :
-                                              currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
+                                                currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
