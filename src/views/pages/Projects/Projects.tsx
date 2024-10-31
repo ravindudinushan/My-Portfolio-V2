@@ -12,6 +12,9 @@ import GymShedule from '../../../assets/images/projects/Gym/Screenshot 2024-10-2
 import ToDo1 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185544.png';
 import ToDo2 from '../../../assets/images/projects/ToDo/Screenshot 2024-10-25 185807.png';
 
+//Currency exchange tracker and analyzer 
+import Currency from '../../../assets/images/projects/currencies/Screenshot 2024-10-25 190157.png';
+
 // Shoe Shop Management System
 import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
 import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
@@ -160,6 +163,11 @@ const ToDoImages = [
   // ToDo List
   ToDo1,
   ToDo2,
+];
+
+const CurrencyImages = [
+  // Currency exchange tracker and analyzer 
+  Currency,
 ];
 
 const shoeShopImages = [
@@ -320,6 +328,7 @@ export function Projects() {
   const [currentProject, setCurrentProject] = useState('');
   const [currentGymImage, setcurrentGymImage] = useState(0);
   const [currentToDoImage, setCurrentToDoImage] = useState(0);
+  const [currentCurrencyImage, setCurrentCurrencyImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
@@ -381,6 +390,17 @@ export function Projects() {
           onNextImage={() => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length)}
           onPreviousImage={() => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length)}
           onClickImage={() => openModal('todO')} />
+
+        <ProjectCard projectName="Currency Exchange Tracker and Analyzer"
+          description="This application allows you to easily convert currencies based on the latest exchange rates. Whether you're planning 
+          a trip, managing your finances, or simply curious about the value of your money in different currencies, this tool is here to help."
+          technologies={["React", "NodeJs", "ExpressJs", "Tailwind CSS", "Open Exchange Rates API"]}
+          githubLink="https://github.com/ravindudinushan/Currency-exchange-tracker-and-analyzer"
+          images={CurrencyImages}
+          currentImageIndex={currentCurrencyImage}
+          onNextImage={() => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length)}
+          onPreviousImage={() => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length)}
+          onClickImage={() => openModal('currency')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -548,7 +568,8 @@ export function Projects() {
                                     currentProject === 'posBackendSpring' ? posBackendSpringImages[currentPOSBackendSpringImage] :
                                       currentProject === 'posBackendSpringBoot' ? posBackendSpringBootImages[currentPOSBackendSpringBootImage] :
                                         currentProject === 'todo' ? ToDoImages[currentToDoImage] :
-                                          currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+                                          currentProject === 'currency' ? CurrencyImages[currentCurrencyImage] :
+                                            currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -567,7 +588,8 @@ export function Projects() {
                                     currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length) :
                                       currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length) :
                                         currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length) :
-                                          currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length) :
+                                            currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -586,7 +608,8 @@ export function Projects() {
                                     currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length) :
                                       currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length) :
                                         currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length) :
-                                          currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length) :
+                                            currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
