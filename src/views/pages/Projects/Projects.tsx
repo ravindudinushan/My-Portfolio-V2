@@ -49,18 +49,20 @@ import ECommerce19 from '../../../assets/images/projects/E-Commerce/Screenshot 2
 import ECommerce20 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222737.png';
 
 // Shoe Shop Management System
-import ShoeShopHome from '../../../assets/images/projects/Shoe-Shop/Home.png';
-import ShoeShopSignUp from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
-import ShoeShopSignIn from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
-import ShoeShopAdminDashboard from '../../../assets/images/projects/Shoe-Shop/Admin-Dashboard.png';
-import ShoeShopCustomer from '../../../assets/images/projects/Shoe-Shop/Customer.png';
-import ShoeShopEmployee from '../../../assets/images/projects/Shoe-Shop/Employee.png';
-import ShoeShopSupplier from '../../../assets/images/projects/Shoe-Shop/Supplier.png';
-import ShoeShopInventory from '../../../assets/images/projects/Shoe-Shop/Inventory.png';
-import ShoeShopSales from '../../../assets/images/projects/Shoe-Shop/Sales.png';
-import ShoeShopAdmin from '../../../assets/images/projects/Shoe-Shop/Admin.png';
-import ShoeShopUser from '../../../assets/images/projects/Shoe-Shop/User.png';
-import ShoeShopCodes from '../../../assets/images/projects/Shoe-Shop/Codes.png';
+import ShoeShop1 from '../../../assets/images/projects/Shoe-Shop/Home.png';
+import ShoeShop2 from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
+import ShoeShop3 from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
+import ShoeShop4 from '../../../assets/images/projects/Shoe-Shop/Admin-Dashboard.png';
+import ShoeShop5 from '../../../assets/images/projects/Shoe-Shop/Customer.png';
+import ShoeShop6 from '../../../assets/images/projects/Shoe-Shop/Employee.png';
+import ShoeShop7 from '../../../assets/images/projects/Shoe-Shop/Supplier.png';
+import ShoeShop8 from '../../../assets/images/projects/Shoe-Shop/Inventory.png';
+import ShoeShop9 from '../../../assets/images/projects/Shoe-Shop/Sales.png';
+import ShoeShop10 from '../../../assets/images/projects/Shoe-Shop/Admin.png';
+import ShoeShop11 from '../../../assets/images/projects/Shoe-Shop/User.png';
+import ShoeShop12 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
+import ShoeShop13 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
+import ShoeShop14 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
 
 // Computer Shop Management System
 // import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
