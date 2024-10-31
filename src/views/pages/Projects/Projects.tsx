@@ -108,19 +108,17 @@ import ShoeShopLandingDiscount from '../../../assets/images/projects/Shoe-Shop-L
 import ShoeShopLandingContacts from '../../../assets/images/projects/Shoe-Shop-Landing/Contacts.png';
 import ShoeShopLandingCodes from '../../../assets/images/projects/Shoe-Shop-Landing/Codes.png';
 
-// Portfolio v1
-// import PortfolioTheme from '../../../assets/images/projects/My-Portfolio/Theme.png';
-import PortfolioHome from '../../../assets/images/projects/My-Portfolio/Home.png';
-import PortfolioAbout from '../../../assets/images/projects/My-Portfolio/About.png';
-import PortfolioSkills from '../../../assets/images/projects/My-Portfolio/Skills.png';
-import PortfolioServices from '../../../assets/images/projects/My-Portfolio/Services.png';
-import PortfolioProjects from '../../../assets/images/projects/My-Portfolio/Projects.png';
-import PortfolioAssignments from '../../../assets/images/projects/My-Portfolio/Assignments.png';
-import PortfolioApplications from '../../../assets/images/projects/My-Portfolio/Applications.png';
-import PortfolioGallery from '../../../assets/images/projects/My-Portfolio/Gallery.png';
-import PortfolioContact from '../../../assets/images/projects/My-Portfolio/Contact.png';
-import PortfolioContact2 from '../../../assets/images/projects/My-Portfolio/Contact2.png';
-import PortfolioCodes from '../../../assets/images/projects/My-Portfolio/Codes.png';
+// MyPortfolio
+import PortfolioHome from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223427.png';
+import PortfolioAbout from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223444.png';
+import PortfolioSkills from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223505.png';
+import PortfolioServices from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223517.png';
+import PortfolioProjects from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223532.png';
+import PortfolioAssignments from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223558.png';
+import PortfolioApplications from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223617.png';
+import PortfolioGallery from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223644.png';
+import PortfolioContact from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223703.png';
+import PortfolioContact2 from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223717.png';
 
 // LinkedIn Clone
 // import LinkedInCloneTheme from '../../../assets/images/projects/LinkedIn-Clone/Theme.png';
@@ -513,6 +511,16 @@ export function Projects() {
           onPreviousImage={() => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length)}
           onClickImage={() => openModal('shoeShop')} />
 
+        <ProjectCard projectName="MyPortfolio"
+          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
+          technologies={["HTML", "CSS", "JavaScript"]}
+          githubLink="https://ravindudinushan.github.io/MyPortfolio/"
+          images={portfolioImages}
+          currentImageIndex={currentPortfolioImage}
+          onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
+          onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
+          onClickImage={() => openModal('portfolio')} />
+
         <ProjectCard projectName="Computer Shop Management System"
           description="The Computer Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
           intuitive interface for managing customers, employees, suppliers, inventory, and orders. The system also integrates Jasper 
@@ -575,16 +583,6 @@ export function Projects() {
           onNextImage={() => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length)}
           onPreviousImage={() => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length)}
           onClickImage={() => openModal('mernPOS')} />
-
-        <ProjectCard projectName="My Portfolio"
-          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
-          technologies={["HTML", "CSS", "JavaScript", "Figma"]}
-          githubLink="https://github.com/Ravindu-Dinushan/MyPortfolio"
-          images={portfolioImages}
-          currentImageIndex={currentPortfolioImage}
-          onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
-          onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
-          onClickImage={() => openModal('portfolio')} />
 
         <ProjectCard projectName="Connect 4 Game"
           description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
