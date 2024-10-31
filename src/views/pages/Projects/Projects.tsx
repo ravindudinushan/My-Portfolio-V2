@@ -2,8 +2,7 @@ import { useState } from 'react';
 import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
-// Simple POS - Laravel
-// import LaaravelPOSTheme from '../../../assets/images/projects/Simple-POS-Laravel/Theme.png';
+// React Gym App
 import LaaravelPOSDashboard from '../../../assets/images/projects/Simple-POS-Laravel/dashboard.png';
 import LaaravelPOSCustomer from '../../../assets/images/projects/Simple-POS-Laravel/customer_management.png';
 import LaaravelPOSItem from '../../../assets/images/projects/Simple-POS-Laravel/item_management.png';
