@@ -156,7 +156,7 @@ const GymImage = [
   GymShedule,
 ];
 
-const ToDo = [
+const ToDoImages = [
   // ToDo List
   ToDo1,
   ToDo2,
@@ -319,6 +319,7 @@ export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
   const [currentGymImage, setcurrentGymImage] = useState(0);
+  const [currentToDoImage, setCurrentToDoImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
@@ -359,7 +360,7 @@ export function Projects() {
           onPreviousImage={() => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length)}
           onClickImage={() => openModal('gym')} />
 
-        <ProjectCard projectName="My Portfolio V2"
+        <ProjectCard projectName="MyPortfolio V2"
           description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights 
           my expertise in creating dynamic and responsive web applications with a modern touch."
           technologies={["React", "Vite", "Tailwind CSS"]}
@@ -369,6 +370,17 @@ export function Projects() {
           onNextImage={() => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length)}
           onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
           onClickImage={() => openModal('portfoliov2')} />
+
+        <ProjectCard projectName="React ToDo List"
+          description="A fast and responsive task management tool built with React, Vite, and Tailwind CSS. It allows users to add, edit, delete, and mark tasks
+           as completed, with a clean and modern interface. Tailored for productivity, it’s optimized for all screen sizes and delivers excellent performance for daily use."
+          technologies={["React", "Vite", "Tailwind CSS"]}
+          githubLink="https://github.com/ravindudinushan/React-ToDoList"
+          images={ToDoImages}
+          currentImageIndex={currentToDoImage}
+          onNextImage={() => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length)}
+          onPreviousImage={() => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length)}
+          onClickImage={() => openModal('todO')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -535,7 +547,8 @@ export function Projects() {
                                   currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] :
                                     currentProject === 'posBackendSpring' ? posBackendSpringImages[currentPOSBackendSpringImage] :
                                       currentProject === 'posBackendSpringBoot' ? posBackendSpringBootImages[currentPOSBackendSpringBootImage] :
-                                        currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+                                        currentProject === 'todo' ? ToDoImages[currentToDoImage] :
+                                          currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -553,7 +566,8 @@ export function Projects() {
                                   currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) :
                                     currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length) :
                                       currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length) :
-                                        currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length) :
+                                          currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -571,7 +585,8 @@ export function Projects() {
                                   currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) :
                                     currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length) :
                                       currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length) :
-                                        currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length) :
+                                          currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
