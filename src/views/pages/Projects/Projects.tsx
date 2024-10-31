@@ -3,12 +3,10 @@ import PopUpImage from './PopUpImage';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 // React Gym App
-import LaaravelPOSDashboard from '../../../assets/images/projects/Simple-POS-Laravel/dashboard.png';
-import LaaravelPOSCustomer from '../../../assets/images/projects/Simple-POS-Laravel/customer_management.png';
-import LaaravelPOSItem from '../../../assets/images/projects/Simple-POS-Laravel/item_management.png';
-import LaaravelPOSPlaceOrder from '../../../assets/images/projects/Simple-POS-Laravel/order_management.png';
-import LaaravelPOSOrderDetails from '../../../assets/images/projects/Simple-POS-Laravel/order_details.png';
-import LaaravelPOSCodes from '../../../assets/images/projects/Simple-POS-Laravel/Codes.png';
+import GymHome from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185205.png';
+import GymAbout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185222.png';
+import GymWorkout from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185314.png';
+import GymShedule from '../../../assets/images/projects/Gym/Screenshot 2024-10-25 185342.png';
 
 // Shoe Shop Management System
 // import ShoeShopTheme from '../../../assets/images/projects/Shoe-Shop/Theme.png';
@@ -151,14 +149,12 @@ import JavaEEPOSOrders from '../../../assets/images/projects/JavaEE-POS/Orders.p
 import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/OrderDetails.png';
 import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
 
-const laravelPOSImages = [
+const GymImage = [
   // LaaravelPOSTheme,
-  LaaravelPOSDashboard,
-  LaaravelPOSCustomer,
-  LaaravelPOSItem,
-  LaaravelPOSPlaceOrder,
-  LaaravelPOSOrderDetails,
-  LaaravelPOSCodes,
+  GymHome,
+  GymAbout,
+  GymWorkout,
+  GymShedule,
 ];
 
 const shoeShopImages = [
@@ -320,7 +316,7 @@ const javaeePOSImages = [
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
-  const [currentLaravelPOSImage, setCurrentLaravelPOSImage] = useState(0);
+  const [currentGymImage, setcurrentGymImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
@@ -350,17 +346,16 @@ export function Projects() {
 
       <div className="max-w-7xl px-6 space-y-32 mt-20">
 
-        <ProjectCard projectName="Simple POS Laravel"
-          description="The Simple POS project is a robust and efficient system designed to support a Point of Sale (POS) application. 
-          Built with the Laravel framework, this project provides essential functionalities for managing customers, item details, and 
-          order processing, with both frontend and backend components."
-          technologies={["HTML", "CSS", "JS", "AJAX", "JQuery", "Bootstrap", "Blades", "Laravel", "MySQL"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Simple-POS-Laravel"
-          images={laravelPOSImages}
-          currentImageIndex={currentLaravelPOSImage}
-          onNextImage={() => setCurrentLaravelPOSImage((prev) => (prev + 1) % laravelPOSImages.length)}
-          onPreviousImage={() => setCurrentLaravelPOSImage((prev) => (prev - 1 + laravelPOSImages.length) % laravelPOSImages.length)}
-          onClickImage={() => openModal('laravelPOS')} />
+        <ProjectCard projectName="React Gym App"
+          description="The Gym App project is a robust and efficient system designed to help exercise. Built with React, Tailwind CSS and 
+          Typescript, the project consists of both front-end and back-end components."
+          technologies={["React", "Tailwind CSS", "Typescript"]}
+          githubLink="https://github.com/ravindudinushan/React-Gym-App"
+          images={GymImage}
+          currentImageIndex={currentGymImage}
+          onNextImage={() => setcurrentGymImage((prev) => (prev + 1) % GymImage.length)}
+          onPreviousImage={() => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length)}
+          onClickImage={() => openModal('gym')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -522,7 +517,7 @@ export function Projects() {
 
       <PopUpImage isOpen={isModalOpen} onClose={closeModal}
         imageSrc={
-          currentProject === 'laravelPOS' ? laravelPOSImages[currentLaravelPOSImage] :
+          currentProject === 'gym' ? GymImage[currentGymImage] :
             currentProject === 'shoeShop' ? shoeShopImages[currentShoeShopImage] :
               currentProject === 'computerShop' ? computerShopImages[currentComputerShopImage] :
                 currentProject === 'hostelManagement' ? hostelManagementImages[currentHostelManagementImage] :
@@ -540,7 +535,7 @@ export function Projects() {
                                         currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
-          currentProject === 'laravelPOS' ? () => setCurrentLaravelPOSImage((prev) => (prev + 1) % laravelPOSImages.length) :
+          currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
               currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
                 currentProject === 'hostelManagement' ? () => setCurrentHostelManagementImage((prev) => (prev + 1) % hostelManagementImages.length) :
@@ -558,7 +553,7 @@ export function Projects() {
                                         currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
-          currentProject === 'laravelPOS' ? () => setCurrentLaravelPOSImage((prev) => (prev - 1 + laravelPOSImages.length) % laravelPOSImages.length) :
+          currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
               currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
                 currentProject === 'hostelManagement' ? () => setCurrentHostelManagementImage((prev) => (prev - 1 + hostelManagementImages.length) % hostelManagementImages.length) :
