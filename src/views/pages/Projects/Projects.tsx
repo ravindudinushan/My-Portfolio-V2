@@ -317,7 +317,6 @@ const portfolioImages = [
   PortfolioGallery,
   PortfolioContact,
   PortfolioContact2,
-  PortfolioCodes,
 ];
 
 const linkedInCloneImages = [
