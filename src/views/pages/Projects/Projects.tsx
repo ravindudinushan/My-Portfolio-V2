@@ -49,20 +49,20 @@ import ECommerce19 from '../../../assets/images/projects/E-Commerce/Screenshot 2
 import ECommerce20 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222737.png';
 
 // Shoe Shop Management System
-import ShoeShop1 from '../../../assets/images/projects/Shoe-Shop/Home.png';
-import ShoeShop2 from '../../../assets/images/projects/Shoe-Shop/SignUp.png';
-import ShoeShop3 from '../../../assets/images/projects/Shoe-Shop/SignIn.png';
-import ShoeShop4 from '../../../assets/images/projects/Shoe-Shop/Admin-Dashboard.png';
-import ShoeShop5 from '../../../assets/images/projects/Shoe-Shop/Customer.png';
-import ShoeShop6 from '../../../assets/images/projects/Shoe-Shop/Employee.png';
-import ShoeShop7 from '../../../assets/images/projects/Shoe-Shop/Supplier.png';
-import ShoeShop8 from '../../../assets/images/projects/Shoe-Shop/Inventory.png';
-import ShoeShop9 from '../../../assets/images/projects/Shoe-Shop/Sales.png';
-import ShoeShop10 from '../../../assets/images/projects/Shoe-Shop/Admin.png';
-import ShoeShop11 from '../../../assets/images/projects/Shoe-Shop/User.png';
-import ShoeShop12 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
-import ShoeShop13 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
-import ShoeShop14 from '../../../assets/images/projects/Shoe-Shop/Codes.png';
+import ShoeShop1 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224123.png';
+import ShoeShop2 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224143.png';
+import ShoeShop3 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224205.png';
+import ShoeShop4 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224237.png';
+import ShoeShop5 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224246.png';
+import ShoeShop6 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224300.png';
+import ShoeShop7 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224529.png';
+import ShoeShop8 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224604.png';
+import ShoeShop9 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224626.png';
+import ShoeShop10 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224641.png';
+import ShoeShop11 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224654.png';
+import ShoeShop12 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224719.png';
+import ShoeShop13 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224742.png';
+import ShoeShop14 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224754.png';
 
 // Computer Shop Management System
 // import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
@@ -243,18 +243,20 @@ const ECommerceImages = [
 
 const shoeShopImages = [
   // ShoeShopTheme,
-  ShoeShopHome,
-  ShoeShopSignUp,
-  ShoeShopSignIn,
-  ShoeShopAdminDashboard,
-  ShoeShopCustomer,
-  ShoeShopEmployee,
-  ShoeShopSupplier,
-  ShoeShopInventory,
-  ShoeShopSales,
-  ShoeShopAdmin,
-  ShoeShopUser,
-  ShoeShopCodes,
+  ShoeShop1,
+  ShoeShop2,
+  ShoeShop3,
+  ShoeShop4,
+  ShoeShop5,
+  ShoeShop6,
+  ShoeShop7,
+  ShoeShop8,
+  ShoeShop9,
+  ShoeShop10,
+  ShoeShop11,
+  ShoeShop12,
+  ShoeShop13,
+  ShoeShop14,
 ];
 
 const computerShopImages = [
@@ -504,7 +506,7 @@ export function Projects() {
                 supported by robust RESTful APIs for role-based authentication and efficient system management."
           technologies={["HTML", "CSS", "JavaScript", "AJAX", "JQuery", "Bootstrap", "Spring Boot", "Spring Data JPA", "Spring Validation",
             "MySQL", "Spring Security", "JSON Web Token (JWT)"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Hello-Shoes-2nd-Sem-Final"
+          githubLink="https://github.com/ravindudinushan/Shoe-Shop-Management-System"
           images={shoeShopImages}
           currentImageIndex={currentShoeShopImage}
           onNextImage={() => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length)}
