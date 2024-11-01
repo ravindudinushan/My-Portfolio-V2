@@ -322,6 +322,12 @@ const portfolioImages = [
   PortfolioContact2,
 ];
 
+const UserImages = [
+  // User register form
+  User1,
+  User2,
+];
+
 const linkedInCloneImages = [
   // LinkedInCloneTheme,
   LinkedInCloneHome,
@@ -405,6 +411,7 @@ export function Projects() {
   const [currentCarRentalImage, setCurrentCarRentalImage] = useState(0);
   const [currentECommerceImage, setCurrentECommerceImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
+  const [currentUserImage, setCurrentUserImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
   const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
@@ -514,7 +521,8 @@ export function Projects() {
           onClickImage={() => openModal('shoeShop')} />
 
         <ProjectCard projectName="MyPortfolio"
-          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
+          description="My Portfolio highlights my top projects and skills, showcasing my creativity, dedication, and growth. It reflects my 
+          approach to problem-solving and continuous learning, offering insights into my innovative solutions and commitment to excellence."
           technologies={["HTML", "CSS", "JavaScript"]}
           githubLink="https://ravindudinushan.github.io/MyPortfolio/"
           images={portfolioImages}
@@ -522,6 +530,18 @@ export function Projects() {
           onNextImage={() => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length)}
           onPreviousImage={() => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length)}
           onClickImage={() => openModal('portfolio')} />
+
+        <ProjectCard projectName="User Register Form (REDUX)"
+          description="A registration form built with React and Redux, using JSON Server as a mock backend. It manages form data and 
+          validation through Redux, saving new user info to JSON Server. This setup provides a responsive, real-world registration 
+          experience for user sign-ups."
+          technologies={["React", "Redux", "JavaScript", "JSON Server"]}
+          githubLink="https://github.com/ravindudinushan/React-CRUD"
+          images={UserImages}
+          currentImageIndex={currentUserImage}
+          onNextImage={() => setCurrentUserImage((prev) => (prev + 1) % UserImages.length)}
+          onPreviousImage={() => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length)}
+          onClickImage={() => openModal('user')} />
 
         <ProjectCard projectName="Computer Shop Management System"
           description="The Computer Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
