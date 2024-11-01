@@ -689,7 +689,8 @@ export function Projects() {
                                           currentProject === 'currency' ? CurrencyImages[currentCurrencyImage] :
                                             currentProject === 'carRental' ? CarRentalImages[currentCarRentalImage] :
                                               currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
-                                                currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+                                                currentProject === 'user' ? UserImages[currentUserImage] :
+                                                  currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -711,7 +712,8 @@ export function Projects() {
                                           currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length) :
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length) :
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
-                                                currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev + 1) % UserImages.length) :
+                                                  currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -733,7 +735,8 @@ export function Projects() {
                                           currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length) :
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length) :
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
-                                                currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length) :
+                                                  currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
