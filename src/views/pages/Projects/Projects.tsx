@@ -441,6 +441,7 @@ export function Projects() {
   const [currentECommerceImage, setCurrentECommerceImage] = useState(0);
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentUserImage, setCurrentUserImage] = useState(0);
+  const [currentAoraImage, setCurrentAoraImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
   const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
@@ -491,6 +492,40 @@ export function Projects() {
           onPreviousImage={() => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length)}
           onClickImage={() => openModal('portfoliov2')} />
 
+        <ProjectCard projectName="E-Commerce Website"
+          description="A comprehensive e-commerce platform built with the MERN stack (MongoDB, Express.js, React, and Node.js), incorporating 
+          JWT authentication for secure user sessions. Styled with Tailwind CSS, this website provides users with a smooth and modern shopping 
+          experience. Key features include user authentication, product browsing, shopping cart, and secure checkout. The platform is optimized 
+          for responsiveness and performance, ensuring a seamless experience across devices."
+          technologies={["React", "NodeJs", "ExpressJs", "MongoDB", "Tailwind CSS", "JSON Web Token (JWT)"]}
+          githubLink="https://github.com/ravindudinushan/E-Commerce-Web-Site"
+          images={ECommerceImages}
+          currentImageIndex={currentECommerceImage}
+          onNextImage={() => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length)}
+          onPreviousImage={() => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length)}
+          onClickImage={() => openModal('ecommerce')} />
+
+        <ProjectCard projectName="Aora Social Media Mobile App"
+          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights 
+          my expertise in creating dynamic and responsive web applications with a modern touch."
+          technologies={["React-Native", "Expo", "NodeJS", "Firebase", "Javascript", "Tailwind CSS"]}
+          githubLink="https://github.com/ravindudinushan/Aora-React-Native-App"
+          images={AoraImages}
+          currentImageIndex={currentAoraImage}
+          onNextImage={() => setCurrentAoraImage((prev) => (prev + 1) % AoraImages.length)}
+          onPreviousImage={() => setCurrentAoraImage((prev) => (prev - 1 + AoraImages.length) % AoraImages.length)}
+          onClickImage={() => openModal('aora')} />
+
+        <ProjectCard projectName="Car Rental Website"
+          description="This is Responsive Premium Car Rental Front-End Website. Using HTML, CSS, JavaScript & Bootstrap"
+          technologies={["HTML", "CSS", "Javascript", "Bootstrap"]}
+          githubLink="https://github.com/ravindudinushan/Car-Rental"
+          images={CarRentalImages}
+          currentImageIndex={currentCarRentalImage}
+          onNextImage={() => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length)}
+          onPreviousImage={() => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length)}
+          onClickImage={() => openModal('carRental')} />
+
         <ProjectCard projectName="React ToDo List"
           description="A fast and responsive task management tool built with React, Vite, and Tailwind CSS. It allows users to add, edit, delete, and mark tasks
            as completed, with a clean and modern interface. Tailored for productivity, it’s optimized for all screen sizes and delivers excellent performance for daily use."
@@ -512,29 +547,6 @@ export function Projects() {
           onNextImage={() => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length)}
           onPreviousImage={() => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length)}
           onClickImage={() => openModal('currency')} />
-
-        <ProjectCard projectName="Car Rental Website"
-          description="This is Responsive Premium Car Rental Front-End Website. Using HTML, CSS, JavaScript & Bootstrap"
-          technologies={["HTML", "CSS", "Javascript", "Bootstrap"]}
-          githubLink="https://github.com/ravindudinushan/Car-Rental"
-          images={CarRentalImages}
-          currentImageIndex={currentCarRentalImage}
-          onNextImage={() => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length)}
-          onPreviousImage={() => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length)}
-          onClickImage={() => openModal('carRental')} />
-
-        <ProjectCard projectName="E-Commerce Website"
-          description="A comprehensive e-commerce platform built with the MERN stack (MongoDB, Express.js, React, and Node.js), incorporating 
-          JWT authentication for secure user sessions. Styled with Tailwind CSS, this website provides users with a smooth and modern shopping 
-          experience. Key features include user authentication, product browsing, shopping cart, and secure checkout. The platform is optimized 
-          for responsiveness and performance, ensuring a seamless experience across devices."
-          technologies={["React", "NodeJs", "ExpressJs", "MongoDB", "Tailwind CSS", "JSON Web Token (JWT)"]}
-          githubLink="https://github.com/ravindudinushan/E-Commerce-Web-Site"
-          images={ECommerceImages}
-          currentImageIndex={currentECommerceImage}
-          onNextImage={() => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length)}
-          onPreviousImage={() => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length)}
-          onClickImage={() => openModal('ecommerce')} />
 
         <ProjectCard projectName="Shoe Shop Management System"
           description="Hello Shoes (PVT) LTD. offers a comprehensive Shoe Shop Management System with a modern frontend and a Spring Boot
@@ -719,7 +731,8 @@ export function Projects() {
                                             currentProject === 'carRental' ? CarRentalImages[currentCarRentalImage] :
                                               currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
                                                 currentProject === 'user' ? UserImages[currentUserImage] :
-                                                  currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+                                                  currentProject === 'aora' ? AoraImages[currentAoraImage] :
+                                                    currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -742,7 +755,8 @@ export function Projects() {
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length) :
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
                                                 currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev + 1) % UserImages.length) :
-                                                  currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev + 1) % AoraImages.length) :
+                                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -765,7 +779,8 @@ export function Projects() {
                                             currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length) :
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
                                                 currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length) :
-                                                  currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev - 1 + AoraImages.length) % AoraImages.length) :
+                                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
