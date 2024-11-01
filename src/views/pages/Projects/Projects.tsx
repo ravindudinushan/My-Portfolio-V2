@@ -127,11 +127,15 @@ import Hostal10 from '../../../assets/images/projects/HostalManagementSystem/Scr
 import Calc1 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
 
 // Thogakade
-import Thogakade1 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
-import Thogakade2 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
-import Thogakade3 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
-import Thogakade4 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
-import Thogakade5 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+import Thogakade1 from '../../../assets/images/projects/ThogakadeHibernate/Screenshot 2024-11-01 095128.png';
+import Thogakade2 from '../../../assets/images/projects/ThogakadeHibernate/Screenshot 2024-11-01 095145.png';
+import Thogakade3 from '../../../assets/images/projects/ThogakadeHibernate/Screenshot 2024-11-01 095200.png';
+import Thogakade4 from '../../../assets/images/projects/ThogakadeHibernate/Screenshot 2024-11-01 095213.png';
+import Thogakade5 from '../../../assets/images/projects/ThogakadeHibernate/Screenshot 2024-11-01 095338.png';
+
+// chat Application
+import Chat1 from '../../../assets/images/projects/ChatApp/Screenshot (90).png';
+import Chat2 from '../../../assets/images/projects/ChatApp/chatApp.png';
 
 // Connect 4 Game
 import Connect4UserName from '../../../assets/images/projects/Connect-4-Game/User-Name.png';
@@ -301,6 +305,21 @@ const CalcImages = [
   Calc1,
 ];
 
+const ThogakadeImages = [
+  // Thogakade
+  Thogakade1,
+  Thogakade2,
+  Thogakade3,
+  Thogakade4,
+  Thogakade5,
+];
+
+const chatApplicationImages = [
+  // Chat Application
+  Chat1,
+  Chat2,
+];
+
 const connect4Images = [
   // Connect4Theme,
   Connect4UserName,
@@ -338,7 +357,8 @@ export function Projects() {
   const [currentSPAImage, setCurrentSPAImage] = useState(0);
   const [currentHostelImage, setCurrentHostelImage] = useState(0);
   const [currentCalcImage, setCurrentCalcImage] = useState(0);
-  // const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
+  const [currentThogakadeImage, setCurrentThogakadeImage] = useState(0);
+  const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
   const [currentPortfolioImage, setCurrentPortfolioImage] = useState(0);
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
@@ -559,15 +579,25 @@ export function Projects() {
           onPreviousImage={() => setCurrentHostelImage((prev) => (prev - 1 + HostelImages.length) % HostelImages.length)}
           onClickImage={() => openModal('hostel')} />
 
-        {/* <ProjectCard projectName="Chat Application"
+        <ProjectCard projectName="Thogakade"
+          description="Thogakade, built with JavaFX, provides an intuitive interface for managing Customer, Item & Orders."
+          technologies={["Java", "JavaFX", "Maven", "MySQL", "Hibernate"]}
+          githubLink="https://github.com/ravindudinushan/Thogakade-Hibernate"
+          images={ThogakadeImages}
+          currentImageIndex={currentThogakadeImage}
+          onNextImage={() => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length)}
+          onPreviousImage={() => setCurrentThogakadeImage((prev) => (prev - 1 + ThogakadeImages.length) % ThogakadeImages.length)}
+          onClickImage={() => openModal('thogakade')} />
+
+        <ProjectCard projectName="Chat Application"
           description="Introducing our innovative Multi-Threaded Chat Application, built in Java with a client-server architecture for real-time communication. Utilizing socket programming and multi-threading in Java, this application enables fast and secure messaging, file sharing, and multimedia exchange across both local and distributed networks."
           technologies={["Java", "JavaFX", "Java Threads", "Java Sockets"]}
-          githubLink="https://github.com/Ravindu-Dinushan/ChatApplication"
+          githubLink="https://github.com/ravindudinushan/chatApp"
           images={chatApplicationImages}
           currentImageIndex={currentChatApplicationImage}
           onNextImage={() => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length)}
           onPreviousImage={() => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length)}
-          onClickImage={() => openModal('chatApplication')} /> */}
+          onClickImage={() => openModal('chatApplication')} />
 
         <ProjectCard projectName="Connect 4 Game"
           description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
@@ -610,7 +640,9 @@ export function Projects() {
                                       currentProject === 'SPA' ? SPAImages[currentSPAImage] :
                                         currentProject === 'hostel' ? HostelImages[currentHostelImage] :
                                           currentProject === 'calc' ? CalcImages[currentCalcImage] :
-                                            currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
+                                            currentProject === 'thogakade' ? ThogakadeImages[currentThogakadeImage] :
+                                              currentProject === 'chatApplication' ? chatApplicationImages[currentChatApplicationImage] :
+                                                currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -630,7 +662,9 @@ export function Projects() {
                                       currentProject === 'SPA' ? () => setCurrentSPAImage((prev) => (prev + 1) % SPAImages.length) :
                                         currentProject === 'hostel' ? () => setCurrentHostelImage((prev) => (prev + 1) % HostelImages.length) :
                                           currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
-                                            currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev + 1) % POSImages.length) : () => { }}
+                                            currentProject === 'thogakade' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
+                                              currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length) :
+                                                currentProject === 'POS' ? () => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -650,7 +684,9 @@ export function Projects() {
                                       currentProject === 'SPA' ? () => setCurrentSPAImage((prev) => (prev - 1 + SPAImages.length) % SPAImages.length) :
                                         currentProject === 'hostel' ? () => setCurrentHostelImage((prev) => (prev - 1 + HostelImages.length) % HostelImages.length) :
                                           currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev - 1 + CalcImages.length) % CalcImages.length) :
-                                            currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
+                                            currentProject === 'thogakade' ? () => setCurrentThogakadeImage((prev) => (prev - 1 + ThogakadeImages.length) % ThogakadeImages.length) :
+                                              currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length) :
+                                                currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
 
     </div>
   );
