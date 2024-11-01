@@ -82,6 +82,10 @@ import Aora10 from '../../../assets/images/projects/Aora/10.jpg';
 import Aora11 from '../../../assets/images/projects/Aora/11.jpg';
 import Aora12 from '../../../assets/images/projects/Aora/12.jpg';
 
+// Highway ticket management system
+import Highway1 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090620.png';
+import Highway2 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090656.png';
+
 // Computer Shop Management System
 import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
 import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
@@ -271,6 +275,12 @@ const shoeShopImages = [
   ShoeShop12,
   ShoeShop13,
   ShoeShop14,
+];
+
+const HighwayImages= [
+  // Highway ticket management system
+  Highway1,
+  Highway2,
 ];
 
 const computerShopImages = [
