@@ -137,6 +137,21 @@ import Thogakade5 from '../../../assets/images/projects/ThogakadeHibernate/Scree
 import Chat1 from '../../../assets/images/projects/ChatApp/Screenshot (90).png';
 import Chat2 from '../../../assets/images/projects/ChatApp/chatApp.png';
 
+// Rio Ice-Cream Shop Management System
+import Rio1 from '../../../assets/images/projects/RIO/Screenshot (41).png';
+import Rio2 from '../../../assets/images/projects/RIO/Screenshot (49).png';
+import Rio3 from '../../../assets/images/projects/RIO/Screenshot (50).png';
+import Rio4 from '../../../assets/images/projects/RIO/Screenshot (51).png';
+import Rio5 from '../../../assets/images/projects/RIO/Screenshot (52).png';
+import Rio6 from '../../../assets/images/projects/RIO/Screenshot (54).png';
+import Rio7 from '../../../assets/images/projects/RIO/Screenshot (55).png';
+import Rio8 from '../../../assets/images/projects/RIO/Screenshot (56).png';
+import Rio9 from '../../../assets/images/projects/RIO/Screenshot (57).png';
+import Rio10 from '../../../assets/images/projects/RIO/Screenshot (58).png';
+import Rio11 from '../../../assets/images/projects/RIO/Screenshot (59).png';
+import Rio12 from '../../../assets/images/projects/RIO/Screenshot (60).png';
+import Rio13 from '../../../assets/images/projects/RIO/Screenshot (61).png';
+
 // Connect 4 Game
 import Connect4UserName from '../../../assets/images/projects/Connect-4-Game/User-Name.png';
 import Connect4GamePlay from '../../../assets/images/projects/Connect-4-Game/Game-Play.png';
@@ -320,6 +335,23 @@ const chatApplicationImages = [
   Chat2,
 ];
 
+const RioImages = [
+  // Rio Ice-Cream Shop Management System
+  Rio1,
+  Rio2,
+  Rio3,
+  Rio4,
+  Rio5,
+  Rio6,
+  Rio7,
+  Rio8,
+  Rio9,
+  Rio10,
+  Rio11,
+  Rio12,
+  Rio13,
+];
+
 const connect4Images = [
   // Connect4Theme,
   Connect4UserName,
@@ -360,6 +392,7 @@ export function Projects() {
   const [currentThogakadeImage, setCurrentThogakadeImage] = useState(0);
   const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
   const [currentPortfolioImage, setCurrentPortfolioImage] = useState(0);
+  const [currentRioImage, setCurrentRioImage] = useState(0);
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
   const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
@@ -556,18 +589,6 @@ export function Projects() {
           onPreviousImage={() => setCurrentCalcImage((prev) => (prev - 1 + CalcImages.length) % CalcImages.length)}
           onClickImage={() => openModal('calc')} />
 
-        {/* <ProjectCard projectName="Computer Shop Management System"
-          description="The Computer Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
-          intuitive interface for managing customers, employees, suppliers, inventory, and orders. The system also integrates Jasper 
-          Reports for generating detailed reports, providing an efficient solution for managing various aspects of a computer shop's operations."
-          technologies={["Java", "JavaFX", "Maven", "MySQL", "Jasper Report"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Computershop-Management-System-1st-Sem-Final"
-          images={computerShopImages}
-          currentImageIndex={currentComputerShopImage}
-          onNextImage={() => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length)}
-          onPreviousImage={() => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length)}
-          onClickImage={() => openModal('computerShop')} /> */}
-
         <ProjectCard projectName="Hostel Management System"
           description="The Hostel Management System, built with JavaFX, provides an intuitive interface for managing students, room allocations,
                 reservations, and user logins. Students can secure rooms by paying key money, streamlining hostel operations and record-keeping."
@@ -598,11 +619,23 @@ export function Projects() {
           onNextImage={() => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length)}
           onPreviousImage={() => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length)}
           onClickImage={() => openModal('chatApplication')} />
+          
+        <ProjectCard projectName="Rio Ice-Cream Shop Management System"
+          description="The Rio Ice-Cream Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
+          intuitive interface for managing users, customers, employees, suppliers, inventory, Event, Delivery and orders. The system also integrates Jasper 
+          Reports for generating detailed reports, providing an efficient solution for managing various aspects of a computer shop's operations."
+          technologies={["Java", "JavaFX", "Maven", "MySQL", "Jasper Report", "Layerd","JDBC"]}
+          githubLink="https://github.com/ravindudinushan/Project-Rio-Layered-"
+          images={RioImages}
+          currentImageIndex={currentRioImage}
+          onNextImage={() => setCurrentRioImage((prev) => (prev + 1) % RioImages.length)}
+          onPreviousImage={() => setCurrentRioImage((prev) => (prev - 1 + RioImages.length) % RioImages.length)}
+          onClickImage={() => openModal('rio')} />
 
         <ProjectCard projectName="Connect 4 Game"
           description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
           technologies={["Java", "JavaFX", "OOP"]}
-          githubLink="https://github.com/Ravindu-Dinushan/connect-four-assignment"
+          githubLink="https://github.com/ravindudinushan/Conect-for-game"
           images={connect4Images}
           currentImageIndex={currentConnect4Image}
           onNextImage={() => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length)}
@@ -611,8 +644,8 @@ export function Projects() {
 
         <ProjectCard projectName="Student Management System - CLI"
           description="This is a Command Line Interface (CLI) application designed to manage student information efficiently. This is the Course-Work of Programming Fundermentals."
-          technologies={["Java", "Fundermentals"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Student-Management-System-CLI"
+          technologies={["Java", "Fundermentals", "OOP"]}
+          githubLink="https://github.com/ravindudinushan/Student_Management_System"
           images={studentCLIImages}
           currentImageIndex={currentStudentCLIImage}
           onNextImage={() => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length)}
@@ -625,7 +658,7 @@ export function Projects() {
         imageSrc={
           currentProject === 'gym' ? GymImage[currentGymImage] :
             currentProject === 'shoeShop' ? shoeShopImages[currentShoeShopImage] :
-              // currentProject === 'computerShop' ? computerShopImages[currentComputerShopImage] :
+              currentProject === 'rio' ? RioImages[currentRioImage] :
                 currentProject === 'portfolio' ? portfolioImages[currentPortfolioImage] :
                   currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
                     currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
@@ -647,7 +680,7 @@ export function Projects() {
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
-              // currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
+              currentProject === 'rio' ? () => setCurrentRioImage((prev) => (prev + 1) % RioImages.length) :
                 currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length) :
                   currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
                     currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
@@ -669,7 +702,7 @@ export function Projects() {
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
-              // currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
+              currentProject === 'rio' ? () => setCurrentRioImage((prev) => (prev - 1 + RioImages.length) % RioImages.length) :
                 currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length) :
                   currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
                     currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
