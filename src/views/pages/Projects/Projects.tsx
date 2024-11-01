@@ -452,6 +452,7 @@ export function Projects() {
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentUserImage, setCurrentUserImage] = useState(0);
   const [currentAoraImage, setCurrentAoraImage] = useState(0);
+  const [currentHighwayImage, setCurrentHighwayImage] = useState(0);
   const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
   const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
   const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
@@ -595,6 +596,18 @@ export function Projects() {
           onNextImage={() => setCurrentUserImage((prev) => (prev + 1) % UserImages.length)}
           onPreviousImage={() => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length)}
           onClickImage={() => openModal('user')} />
+
+        <ProjectCard projectName="Highway Ticket Management System"
+          description="A microservices-based ticketing system using Java, Spring Boot, Hibernate, and Eureka Server for managing highway 
+          violations. It allows ticket issuance, fine calculation, and payment tracking with efficient data handling through JPA. Eureka 
+          Server supports seamless service discovery and scalability across microservices."
+          technologies={["Java", "Springboot", "Micro-Service", "Hibernate", "JPA", "Eureka Server"]}
+          githubLink="https://github.com/ravindudinushan/Highway_Ticket_Management_System"
+          images={HighwayImages}
+          currentImageIndex={currentHighwayImage}
+          onNextImage={() => setCurrentHighwayImage((prev) => (prev + 1) % HighwayImages.length)}
+          onPreviousImage={() => setCurrentHighwayImage((prev) => (prev - 1 + HighwayImages.length) % HighwayImages.length)}
+          onClickImage={() => openModal('highway')} />
 
         <ProjectCard projectName="Computer Shop Management System"
           description="The Computer Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
@@ -744,6 +757,7 @@ export function Projects() {
                                               currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
                                                 currentProject === 'user' ? UserImages[currentUserImage] :
                                                   currentProject === 'aora' ? AoraImages[currentAoraImage] :
+                                                    currentProject === 'highway' ? HighwayImages[currentHighwayImage] :
                                                     currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
 
         onNext={
@@ -768,7 +782,8 @@ export function Projects() {
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
                                                 currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev + 1) % UserImages.length) :
                                                   currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev + 1) % AoraImages.length) :
-                                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+                                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev + 1) % HighwayImages.length) :
+                                                      currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -792,7 +807,8 @@ export function Projects() {
                                               currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
                                                 currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length) :
                                                   currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev - 1 + AoraImages.length) % AoraImages.length) :
-                                                    currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+                                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev - 1 + HighwayImages.length) % HighwayImages.length) :
+                                                      currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
 
     </div>
   );
