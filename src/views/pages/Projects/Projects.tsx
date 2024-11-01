@@ -68,6 +68,20 @@ import ShoeShop14 from '../../../assets/images/projects/Shoe-Shop/Screenshot 202
 import User1 from '../../../assets/images/projects/ReduxCRUD/Screenshot 2024-11-01 085711.png';
 import User2 from '../../../assets/images/projects/ReduxCRUD/Screenshot 2024-11-01 085742.png';
 
+// Aora mobile app
+import Aora1 from '../../../assets/images/projects/Aora/1.jpg';
+import Aora2 from '../../../assets/images/projects/Aora/2.jpg';
+import Aora3 from '../../../assets/images/projects/Aora/3.jpg';
+import Aora4 from '../../../assets/images/projects/Aora/4.jpg';
+import Aora5 from '../../../assets/images/projects/Aora/5.jpg';
+import Aora6 from '../../../assets/images/projects/Aora/6.jpg';
+import Aora7 from '../../../assets/images/projects/Aora/7.jpg';
+import Aora8 from '../../../assets/images/projects/Aora/8.jpg';
+import Aora9 from '../../../assets/images/projects/Aora/9.jpg';
+import Aora10 from '../../../assets/images/projects/Aora/10.jpg';
+import Aora11 from '../../../assets/images/projects/Aora/11.jpg';
+import Aora12 from '../../../assets/images/projects/Aora/12.jpg';
+
 // Computer Shop Management System
 import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
 import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
@@ -154,7 +168,6 @@ import PortfolioV2Services from '../../../assets/images/projects/MyPortfolio-V2/
 import PortfolioV2Contacts from '../../../assets/images/projects/MyPortfolio-V2/Screenshot 2024-10-31 101323.png';
 
 // student Management System - CLI
-// import StudentManagementTheme from '../../../assets/images/projects/Student-CLI/Theme.png';
 import StudentManagementCodes from '../../../assets/images/projects/Student-CLI/Codes.png';
 
 // POS FrontEnd - React
@@ -326,6 +339,22 @@ const UserImages = [
   // User register form
   User1,
   User2,
+];
+
+const AoraImages = [
+  // Aora mobile App
+  Aora1,
+  Aora2,
+  Aora3,
+  Aora4,
+  Aora5,
+  Aora6,
+  Aora7,
+  Aora8,
+  Aora9,
+  Aora10,
+  Aora11,
+  Aora12,
 ];
 
 const linkedInCloneImages = [
