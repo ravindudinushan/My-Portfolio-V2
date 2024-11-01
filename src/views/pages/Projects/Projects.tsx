@@ -506,9 +506,11 @@ export function Projects() {
           onClickImage={() => openModal('ecommerce')} />
 
         <ProjectCard projectName="Aora Social Media Mobile App"
-          description="Dive into a showcase of my diverse skill set, meticulously crafted using React and Vite. This portfolio highlights 
-          my expertise in creating dynamic and responsive web applications with a modern touch."
-          technologies={["React-Native", "Expo", "NodeJS", "Firebase", "Javascript", "Tailwind CSS"]}
+          description="Aora is a social networking app developed with React Native and Expo for seamless cross-platform functionality. 
+          Powered by Node.js and Appwrite, it enables secure, real-time interactions between users. Key features include user authentication, 
+          profile creation, messaging, and activity feeds. Appwrite handles backend services like authentication and database management, 
+          making the app scalable and secure."
+          technologies={["React-Native", "Expo", "NodeJS", "Appwrite", "Javascript", "Tailwind CSS"]}
           githubLink="https://github.com/ravindudinushan/Aora-React-Native-App"
           images={AoraImages}
           currentImageIndex={currentAoraImage}
