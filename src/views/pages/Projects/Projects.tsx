@@ -86,49 +86,6 @@ import Aora12 from '../../../assets/images/projects/Aora/12.jpg';
 import Highway1 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090620.png';
 import Highway2 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090656.png';
 
-// Computer Shop Management System
-import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
-import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
-import ComputerShopCustomer from '../../../assets/images/projects/Computer-Shop/Customer.png';
-import ComputerShopSupplier from '../../../assets/images/projects/Computer-Shop/Supplier.png';
-import ComputerShopStore from '../../../assets/images/projects/Computer-Shop/Store.png';
-import ComputerShopSalary from '../../../assets/images/projects/Computer-Shop/Salary.png';
-import ComputerShopOrders from '../../../assets/images/projects/Computer-Shop/Orders.png';
-import ComputerShopReports from '../../../assets/images/projects/Computer-Shop/Reports.png';
-import ComputerShopCustomerReport from '../../../assets/images/projects/Computer-Shop/Customer-Report.png';
-import ComputerShopCodes from '../../../assets/images/projects/Computer-Shop/Codes.png';
-
-// Hostel Management System
-// import HostelManagementTheme from '../../../assets/images/projects/Hostel-Management/Theme.png';
-import HostelManagementHome from '../../../assets/images/projects/Hostel-Management/Home.png';
-import HostelManagementAdminDashboard from '../../../assets/images/projects/Hostel-Management/Admin-Dashboard.png';
-import HostelManagementStudents from '../../../assets/images/projects/Hostel-Management/Students.png';
-import HostelManagementRooms from '../../../assets/images/projects/Hostel-Management/Rooms.png';
-import HostelManagementReservation from '../../../assets/images/projects/Hostel-Management/Reservation.png';
-import HostelManagementKeyMoney from '../../../assets/images/projects/Hostel-Management/Key-Money.png';
-import HostelManagementUser from '../../../assets/images/projects/Hostel-Management/User.png';
-import HostelManagementReports from '../../../assets/images/projects/Hostel-Management/Reports.png';
-import HostelManagementCodes from '../../../assets/images/projects/Hostel-Management/Codes.png';
-
-// Chat Application
-// import ChatRoomTheme from '../../../assets/images/projects/Chat-Application/Theme.png';
-import ChatRoom1 from '../../../assets/images/projects/Chat-Application/Chat-Room-1.png';
-import ChatRoom2 from '../../../assets/images/projects/Chat-Application/Chat-Room-2.png';
-import ChatApplicationCodes from '../../../assets/images/projects/Chat-Application/Codes.png';
-import ChatApplicationLiveChatRoom from '../../../assets/images/projects/Chat-Application/Live-Chat-Room.gif';
-
-// Shoe Shop Landing Page
-// import ShoeShopLandingTheme from '../../../assets/images/projects/Shoe-Shop-Landing/Theme.png';
-import ShoeShopLandingHome from '../../../assets/images/projects/Shoe-Shop-Landing/Home.png';
-import ShoeShopLandingAbout from '../../../assets/images/projects/Shoe-Shop-Landing/About.png';
-import ShoeShopLandingShoeCollection1 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-1.png';
-import ShoeShopLandingShoeCollection2 from '../../../assets/images/projects/Shoe-Shop-Landing/Shoe-Collection-2.png';
-import ShoeShopLandingCTA from '../../../assets/images/projects/Shoe-Shop-Landing/CTA.png';
-import ShoeShopLandingReviews from '../../../assets/images/projects/Shoe-Shop-Landing/Reviews.png';
-import ShoeShopLandingDiscount from '../../../assets/images/projects/Shoe-Shop-Landing/Discount.png';
-import ShoeShopLandingContacts from '../../../assets/images/projects/Shoe-Shop-Landing/Contacts.png';
-import ShoeShopLandingCodes from '../../../assets/images/projects/Shoe-Shop-Landing/Codes.png';
-
 // MyPortfolio
 import PortfolioHome from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223427.png';
 import PortfolioAbout from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223444.png';
@@ -141,24 +98,42 @@ import PortfolioGallery from '../../../assets/images/projects/MyPortfolio/Screen
 import PortfolioContact from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223703.png';
 import PortfolioContact2 from '../../../assets/images/projects/MyPortfolio/Screenshot 2024-09-01 223717.png';
 
-// LinkedIn Clone
-// import LinkedInCloneTheme from '../../../assets/images/projects/LinkedIn-Clone/Theme.png';
-import LinkedInCloneHome from '../../../assets/images/projects/LinkedIn-Clone/Home.png';
-import LinkedInCloneNetwork from '../../../assets/images/projects/LinkedIn-Clone/Network.png';
-import LinkedInClonePost from '../../../assets/images/projects/LinkedIn-Clone/Post.png';
-import LinkedInCloneNotification from '../../../assets/images/projects/LinkedIn-Clone/Notification.png';
-import LinkedInCloneJobs from '../../../assets/images/projects/LinkedIn-Clone/Jobs.png';
-import LinkedInCloneProfile from '../../../assets/images/projects/LinkedIn-Clone/Profile.png';
-import LinkedInCloneCodes from '../../../assets/images/projects/LinkedIn-Clone/Codes.png';
+// Springboot web POS
+import POS1 from '../../../assets/images/projects/SpringPos/Screenshot 2024-11-01 091318.png';
+import POS2 from '../../../assets/images/projects/SpringPos/Screenshot 2024-11-01 091345.png';
+import POS3 from '../../../assets/images/projects/SpringPos/Screenshot 2024-11-01 091403.png';
+import POS4 from '../../../assets/images/projects/SpringPos/Screenshot 2024-11-01 091512.png';
+import POS5 from '../../../assets/images/projects/SpringPos/Screenshot 2024-11-01 091526.png';
 
-// MERN POS System
-// import MERNPOSTheme from '../../../assets/images/projects/MERN-POS/Theme.png';
-import MERNPOSCustomer from '../../../assets/images/projects/MERN-POS/Customer.png';
-import MERNPOSItem from '../../../assets/images/projects/MERN-POS/Item.png';
-import MERNPOSCodes from '../../../assets/images/projects/MERN-POS/Codes.png';
+// SPA POS
+import SPA1 from '../../../assets/images/projects/SPA/Screenshot 2024-11-01 103450.png';
+import SPA2 from '../../../assets/images/projects/SPA/Screenshot 2024-11-01 103513.png';
+import SPA3 from '../../../assets/images/projects/SPA/Screenshot 2024-11-01 103535.png';
+import SPA4 from '../../../assets/images/projects/SPA/Screenshot 2024-11-01 103552.png';
+
+// Hostal Management System
+import Hostal1 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100403.png';
+import Hostal2 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100501.png';
+import Hostal3 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100522.png';
+import Hostal4 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100600.png';
+import Hostal5 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100613.png';
+import Hostal6 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100632.png';
+import Hostal7 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100654.png';
+import Hostal8 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100705.png';
+import Hostal9 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100718.png';
+import Hostal10 from '../../../assets/images/projects/HostalManagementSystem/Screenshot 2024-11-01 100736.png';
+
+// JS Calc
+import Calc1 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+
+// Thogakade
+import Thogakade1 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+import Thogakade2 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+import Thogakade3 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+import Thogakade4 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
+import Thogakade5 from '../../../assets/images/projects/JsCalc/Screenshot 2024-11-01 102107.png';
 
 // Connect 4 Game
-// import Connect4Theme from '../../../assets/images/projects/Connect-4-Game/Theme.png';
 import Connect4UserName from '../../../assets/images/projects/Connect-4-Game/User-Name.png';
 import Connect4GamePlay from '../../../assets/images/projects/Connect-4-Game/Game-Play.png';
 import Connect4Codes from '../../../assets/images/projects/Connect-4-Game/Codes.png';
@@ -173,36 +148,6 @@ import PortfolioV2Contacts from '../../../assets/images/projects/MyPortfolio-V2/
 
 // student Management System - CLI
 import StudentManagementCodes from '../../../assets/images/projects/Student-CLI/Codes.png';
-
-// POS FrontEnd - React
-// import POSFrontendTheme from '../../../assets/images/projects/POS-FrontEnd-React/Theme.png';
-import POSFrontendHome from '../../../assets/images/projects/POS-FrontEnd-React/Home.png';
-import POSFrontendCustomer from '../../../assets/images/projects/POS-FrontEnd-React/Customer.png';
-import POSFrontendItem from '../../../assets/images/projects/POS-FrontEnd-React/Item.png';
-import POSFrontendOrder from '../../../assets/images/projects/POS-FrontEnd-React/Order.png';
-import POSFrontendOrderDetails from '../../../assets/images/projects/POS-FrontEnd-React/OrderDetails.png';
-import POSFrontendCodes from '../../../assets/images/projects/POS-FrontEnd-React/Codes.png';
-
-// POS BackEnd - Spring
-// import POSBackendSpringTheme from '../../../assets/images/projects/POS-BackEnd-Spring/Theme.png';
-import POSBackendSpringCustomer from '../../../assets/images/projects/POS-BackEnd-Spring/Customer.png';
-import POSBackendSpringItem from '../../../assets/images/projects/POS-BackEnd-Spring/Item.png';
-import POSBackendSpringCodes from '../../../assets/images/projects/POS-BackEnd-Spring/Codes.png';
-
-// POS BackEnd - SpringBoot
-// import POSBackendSpringBootTheme from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Theme.png';
-import POSBackendSpringBootCustomer from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Customer.png';
-import POSBackendSpringBootItem from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Item.png';
-import POSBackendSpringBootCodes from '../../../assets/images/projects/POS-BackEnd-SpringBoot/Codes.png';
-
-// JavaEE POS
-// import JavaEEPOSTheme from '../../../assets/images/projects/JavaEE-POS/Theme.png';
-import JavaEEPOSHome from '../../../assets/images/projects/JavaEE-POS/Home.png';
-import JavaEEPOSCustomer from '../../../assets/images/projects/JavaEE-POS/Customer.png';
-import JavaEEPOSItem from '../../../assets/images/projects/JavaEE-POS/Item.png';
-import JavaEEPOSOrders from '../../../assets/images/projects/JavaEE-POS/Orders.png';
-import JavaEEPOSOrderDetails from '../../../assets/images/projects/JavaEE-POS/OrderDetails.png';
-import JavaEEPOSPOSCodes from '../../../assets/images/projects/JavaEE-POS/Codes.png';
 
 const GymImage = [
   // Gym App,
@@ -237,6 +182,7 @@ const CarRentalImages = [
 ];
 
 const ECommerceImages = [
+  // E-Commerce website
   ECommerce1,
   ECommerce2,
   ECommerce3,
@@ -283,54 +229,6 @@ const HighwayImages= [
   Highway2,
 ];
 
-const computerShopImages = [
-  // ComputerShopTheme,
-  ComputerShopLogin,
-  ComputerShopAdminDashboard,
-  ComputerShopCustomer,
-  ComputerShopSupplier,
-  ComputerShopStore,
-  ComputerShopSalary,
-  ComputerShopOrders,
-  ComputerShopReports,
-  ComputerShopCustomerReport,
-  ComputerShopCodes,
-];
-
-const hostelManagementImages = [
-  // HostelManagementTheme,
-  HostelManagementHome,
-  HostelManagementAdminDashboard,
-  HostelManagementStudents,
-  HostelManagementRooms,
-  HostelManagementReservation,
-  HostelManagementKeyMoney,
-  HostelManagementUser,
-  HostelManagementReports,
-  HostelManagementCodes,
-];
-
-const chatApplicationImages = [
-  // ChatRoomTheme,
-  ChatRoom1,
-  ChatRoom2,
-  ChatApplicationCodes,
-  ChatApplicationLiveChatRoom,
-];
-
-const shoeShopLandingImages = [
-  // ShoeShopLandingTheme,
-  ShoeShopLandingHome,
-  ShoeShopLandingAbout,
-  ShoeShopLandingShoeCollection1,
-  ShoeShopLandingShoeCollection2,
-  ShoeShopLandingCTA,
-  ShoeShopLandingReviews,
-  ShoeShopLandingDiscount,
-  ShoeShopLandingContacts,
-  ShoeShopLandingCodes,
-];
-
 const portfolioImages = [
   // PortfolioTheme,
   PortfolioHome,
@@ -367,22 +265,40 @@ const AoraImages = [
   Aora12,
 ];
 
-const linkedInCloneImages = [
-  // LinkedInCloneTheme,
-  LinkedInCloneHome,
-  LinkedInCloneNetwork,
-  LinkedInClonePost,
-  LinkedInCloneNotification,
-  LinkedInCloneJobs,
-  LinkedInCloneProfile,
-  LinkedInCloneCodes,
+const POSImages = [
+  // POS
+  POS1,
+  POS2,
+  POS3,
+  POS4,
+  POS5,
 ];
 
-const mernPOSImages = [
-  // MERNPOSTheme,
-  MERNPOSCustomer,
-  MERNPOSItem,
-  MERNPOSCodes,
+const SPAImages = [
+  // SPA POS
+  SPA1,
+  SPA2,
+  SPA3,
+  SPA4,
+];
+
+const HostelImages = [
+  // Hostal management system
+  Hostal1,
+  Hostal2,
+  Hostal3,
+  Hostal4,
+  Hostal5,
+  Hostal6,
+  Hostal7,
+  Hostal8,
+  Hostal9,
+  Hostal10,
+];
+
+const CalcImages = [
+  // JS Calc
+  Calc1,
 ];
 
 const connect4Images = [
@@ -407,40 +323,6 @@ const studentCLIImages = [
   StudentManagementCodes
 ];
 
-const posFrontendImages = [
-  // POSFrontendTheme,
-  POSFrontendHome,
-  POSFrontendCustomer,
-  POSFrontendItem,
-  POSFrontendOrder,
-  POSFrontendOrderDetails,
-  POSFrontendCodes
-];
-
-const posBackendSpringImages = [
-  // POSBackendSpringTheme,
-  POSBackendSpringCustomer,
-  POSBackendSpringItem,
-  POSBackendSpringCodes
-];
-
-const posBackendSpringBootImages = [
-  // POSBackendSpringBootTheme,
-  POSBackendSpringBootCustomer,
-  POSBackendSpringBootItem,
-  POSBackendSpringBootCodes
-];
-
-const javaeePOSImages = [
-  // JavaEEPOSTheme,
-  JavaEEPOSHome,
-  JavaEEPOSCustomer,
-  JavaEEPOSItem,
-  JavaEEPOSOrders,
-  JavaEEPOSOrderDetails,
-  JavaEEPOSPOSCodes
-];
-
 export function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState('');
@@ -453,20 +335,15 @@ export function Projects() {
   const [currentUserImage, setCurrentUserImage] = useState(0);
   const [currentAoraImage, setCurrentAoraImage] = useState(0);
   const [currentHighwayImage, setCurrentHighwayImage] = useState(0);
-  const [currentComputerShopImage, setCurrentComputerShopImage] = useState(0);
-  const [currentHostelManagementImage, setCurrentHostelManagementImage] = useState(0);
-  const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
-  const [currentShoeShopLandingImage, setCurrentShoeShopLandingImage] = useState(0);
+  const [currentSPAImage, setCurrentSPAImage] = useState(0);
+  const [currentHostelImage, setCurrentHostelImage] = useState(0);
+  const [currentCalcImage, setCurrentCalcImage] = useState(0);
+  // const [currentChatApplicationImage, setCurrentChatApplicationImage] = useState(0);
   const [currentPortfolioImage, setCurrentPortfolioImage] = useState(0);
-  const [currentLinkedinImage, setCurrentLinkedinImage] = useState(0);
-  const [currentMernPOSImage, setCurrentMernPOSImage] = useState(0);
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
   const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
-  const [currentPOSFrontendImage, setCurrentPOSFrontendImage] = useState(0);
-  const [currentPOSBackendSpringImage, setCurrentPOSBackendSpringImage] = useState(0);
-  const [currentPOSBackendSpringBootImage, setCurrentPOSBackendSpringBootImage] = useState(0);
-  const [currentJavaEEPOSImage, setCurrentJavaEEPOSImage] = useState(0);
+  const [currentPOSImage, setCurrentPOSImage] = useState(0);
 
   const openModal = (projectType) => {
     setIsModalOpen(true);
@@ -609,7 +486,57 @@ export function Projects() {
           onPreviousImage={() => setCurrentHighwayImage((prev) => (prev - 1 + HighwayImages.length) % HighwayImages.length)}
           onClickImage={() => openModal('highway')} />
 
-        <ProjectCard projectName="Computer Shop Management System"
+        <ProjectCard projectName="Springboot Web POS"
+          description="This is my first simple POS system using Springboot, with a frontend for the user interface and a backend built with Springboot to manage the API."
+          technologies={["HTML", "CSS", "JS", "Bootstrap", "Springboot", "AJAX", "JSON", "Hibernate", "JPA", "MySQL"]}
+          githubLink="https://github.com/ravindudinushan?page=1&tab=repositories"
+          images={POSImages}
+          currentImageIndex={currentPOSImage}
+          onNextImage={() => setCurrentPOSImage((prev) => (prev + 1) % POSImages.length)}
+          onPreviousImage={() => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length)}
+          onClickImage={() => openModal('POS')} />
+
+        <ProjectCard projectName="Spring Web POS"
+          description="This is my first simple POS system using Spring, with a frontend for the user interface and a backend built with Spring to manage the API."
+          technologies={["HTML", "CSS", "JS", "Bootstrap", "Spring", "AJAX", "JSON", "Hibernate", "JPA", "MySQL"]}
+          githubLink="https://github.com/ravindudinushan/Spring-Web-POS"
+          images={POSImages}
+          currentImageIndex={currentPOSImage}
+          onNextImage={() => setCurrentPOSImage((prev) => (prev + 1) % POSImages.length)}
+          onPreviousImage={() => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length)}
+          onClickImage={() => openModal('POS')} />
+
+        <ProjectCard projectName="JavaEE Web POS"
+          description="This is my first simple POS system using Java EE, with a frontend for the user interface and a backend built with Java EE to manage the API."
+          technologies={["HTML", "CSS", "JS", "Bootstrap", "AJAX", "JavaEE", "JSON", "Hibernate", "JPA", "MySQL"]}
+          githubLink="https://github.com/ravindudinushan/AAD-Assignment-JavaEE"
+          images={POSImages}
+          currentImageIndex={currentPOSImage}
+          onNextImage={() => setCurrentPOSImage((prev) => (prev + 1) % POSImages.length)}
+          onPreviousImage={() => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length)}
+          onClickImage={() => openModal('POS')} />
+
+        <ProjectCard projectName="SPA POS"
+          description="This is my first simple SPA POS system using HTML, CSS, & JS with a frontend for the user interface."
+          technologies={["HTML", "CSS", "JS", "Bootstrap", "AJAX", "JavaEE", "JSON", "Hibernate", "JPA", "MySQL"]}
+          githubLink="https://github.com/ravindudinushan/AAD-Assignment-JavaEE"
+          images={SPAImages}
+          currentImageIndex={currentSPAImage}
+          onNextImage={() => setCurrentSPAImage((prev) => (prev + 1) % SPAImages.length)}
+          onPreviousImage={() => setCurrentSPAImage((prev) => (prev - 1 + SPAImages.length) % SPAImages.length)}
+          onClickImage={() => openModal('SPA')} />
+
+        <ProjectCard projectName="JS Calculator"
+          description="This is my simple Calculator using HTML, CSS, & JS."
+          technologies={["HTML", "CSS", "JS"]}
+          githubLink="https://github.com/ravindudinushan/JS-Calculator"
+          images={CalcImages}
+          currentImageIndex={currentCalcImage}
+          onNextImage={() => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length)}
+          onPreviousImage={() => setCurrentCalcImage((prev) => (prev - 1 + CalcImages.length) % CalcImages.length)}
+          onClickImage={() => openModal('calc')} />
+
+        {/* <ProjectCard projectName="Computer Shop Management System"
           description="The Computer Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
           intuitive interface for managing customers, employees, suppliers, inventory, and orders. The system also integrates Jasper 
           Reports for generating detailed reports, providing an efficient solution for managing various aspects of a computer shop's operations."
@@ -619,20 +546,20 @@ export function Projects() {
           currentImageIndex={currentComputerShopImage}
           onNextImage={() => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length)}
           onPreviousImage={() => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length)}
-          onClickImage={() => openModal('computerShop')} />
+          onClickImage={() => openModal('computerShop')} /> */}
 
         <ProjectCard projectName="Hostel Management System"
           description="The Hostel Management System, built with JavaFX, provides an intuitive interface for managing students, room allocations,
                 reservations, and user logins. Students can secure rooms by paying key money, streamlining hostel operations and record-keeping."
           technologies={["Java", "JavaFX", "Maven", "MySQL", "Hibernate"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Hostel-Management-System"
-          images={hostelManagementImages}
-          currentImageIndex={currentHostelManagementImage}
-          onNextImage={() => setCurrentHostelManagementImage((prev) => (prev + 1) % hostelManagementImages.length)}
-          onPreviousImage={() => setCurrentHostelManagementImage((prev) => (prev - 1 + hostelManagementImages.length) % hostelManagementImages.length)}
-          onClickImage={() => openModal('hostelManagement')} />
+          githubLink="https://github.com/ravindudinushan/Hostel-Management-System"
+          images={HostelImages}
+          currentImageIndex={currentHostelImage}
+          onNextImage={() => setCurrentHostelImage((prev) => (prev + 1) % HostelImages.length)}
+          onPreviousImage={() => setCurrentHostelImage((prev) => (prev - 1 + HostelImages.length) % HostelImages.length)}
+          onClickImage={() => openModal('hostel')} />
 
-        <ProjectCard projectName="Chat Application"
+        {/* <ProjectCard projectName="Chat Application"
           description="Introducing our innovative Multi-Threaded Chat Application, built in Java with a client-server architecture for real-time communication. Utilizing socket programming and multi-threading in Java, this application enables fast and secure messaging, file sharing, and multimedia exchange across both local and distributed networks."
           technologies={["Java", "JavaFX", "Java Threads", "Java Sockets"]}
           githubLink="https://github.com/Ravindu-Dinushan/ChatApplication"
@@ -640,37 +567,7 @@ export function Projects() {
           currentImageIndex={currentChatApplicationImage}
           onNextImage={() => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length)}
           onPreviousImage={() => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length)}
-          onClickImage={() => openModal('chatApplication')} />
-
-        <ProjectCard projectName="Shoe Shop Landing Page"
-          description="This Shoe Shop Landing Page houses the code for our sleek and user-friendly site, crafted to highlight our brand and product offerings. Designed with a modern and responsive layout, this page ensures a seamless user experience across all devices."
-          technologies={["HTML", "CSS", "JavaScript"]}
-          githubLink="https://github.com/Ravindu-Dinushan/Shoe-Shop-Landing-Page"
-          images={shoeShopLandingImages}
-          currentImageIndex={currentShoeShopLandingImage}
-          onNextImage={() => setCurrentShoeShopLandingImage((prev) => (prev + 1) % shoeShopLandingImages.length)}
-          onPreviousImage={() => setCurrentShoeShopLandingImage((prev) => (prev - 1 + shoeShopLandingImages.length) % shoeShopLandingImages.length)}
-          onClickImage={() => openModal('shoeShopLanding')} />
-
-        <ProjectCard projectName="LinkedIn Clone - Mobile Application"
-          description="This is my First Mobile Application: LinkedIn Clone App, developed using React Native. I focused on replicating the core functionalities and UI of LinkedIn to ensure a user-friendly experience. An Android Emulator was used for testing and debugging, which was essential in fine-tuning the app's performance and usability."
-          technologies={["React Native", "Android Studio", "VS Code"]}
-          githubLink="https://github.com/Ravindu-Dinushan/LinkedIn-Clone-App"
-          images={linkedInCloneImages}
-          currentImageIndex={currentLinkedinImage}
-          onNextImage={() => setCurrentLinkedinImage((prev) => (prev + 1) % linkedInCloneImages.length)}
-          onPreviousImage={() => setCurrentLinkedinImage((prev) => (prev - 1 + linkedInCloneImages.length) % linkedInCloneImages.length)}
-          onClickImage={() => openModal('linkedinClone')} />
-
-        <ProjectCard projectName="Simple MERN POS"
-          description="This is my First MERN Application .A straightforward Point of Sale system developed using the MERN stack. This application includes essential features like customer management, item management, and order placement, offering a comprehensive solution for basic sales operations."
-          technologies={["React.js", "Axios", "Node.js", "Express.js", "MongoDB"]}
-          githubLink="https://github.com/Ravindu-Dinushan/MERN-POS"
-          images={mernPOSImages}
-          currentImageIndex={currentMernPOSImage}
-          onNextImage={() => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length)}
-          onPreviousImage={() => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length)}
-          onClickImage={() => openModal('mernPOS')} />
+          onClickImage={() => openModal('chatApplication')} /> */}
 
         <ProjectCard projectName="Connect 4 Game"
           description="I created this Connect 4 game as a way to deepen my understanding of Object-Oriented Programming (OOP) in Java. Through this project, I explored the principles of encapsulation, inheritance, polymorphism and abstraction, all while bringing a classic game to life."
@@ -681,46 +578,6 @@ export function Projects() {
           onNextImage={() => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length)}
           onPreviousImage={() => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length)}
           onClickImage={() => openModal('connect4')} />
-
-        <ProjectCard projectName="JavaEE POS"
-          description="This is my first simple POS system using Java EE, with a frontend for the user interface and a backend built with Java EE to manage the API."
-          technologies={["HTML", "CSS", "JS", "AJAX", "JavaEE", "MySQL"]}
-          githubLink="https://github.com/Ravindu-Dinushan/JavaEE-POS"
-          images={javaeePOSImages}
-          currentImageIndex={currentJavaEEPOSImage}
-          onNextImage={() => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length)}
-          onPreviousImage={() => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length)}
-          onClickImage={() => openModal('javaeePOS')} />
-
-        <ProjectCard projectName="POS FrontEnd - React"
-          description="This is my first project using React, where I built a simple POS frontend designed to integrate with a backend powered by Java EE, Spring, and Spring Boot."
-          technologies={["React", "Axios", "VS Code"]}
-          githubLink="https://github.com/Ravindu-Dinushan/POS-FrontEnd-React"
-          images={posFrontendImages}
-          currentImageIndex={currentPOSFrontendImage}
-          onNextImage={() => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length)}
-          onPreviousImage={() => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length)}
-          onClickImage={() => openModal('posFrontend')} />
-
-        <ProjectCard projectName="POS BackEnd - Spring"
-          description="This is my first project where I've implemented a Spring based BackEnd for a POS system. It utilizes Spring and Spring Data JPA to handle business logic and data persistence, providing a robust and scalable solution for managing transactions and inventory."
-          technologies={["Spring", "Spring Data JPA", "MySQL"]}
-          githubLink="https://github.com/Ravindu-Dinushan/POS-BackEnd-Spring"
-          images={posBackendSpringImages}
-          currentImageIndex={currentPOSBackendSpringImage}
-          onNextImage={() => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length)}
-          onPreviousImage={() => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length)}
-          onClickImage={() => openModal('posBackendSpring')} />
-
-        <ProjectCard projectName="POS BackEnd - SpringBoot"
-          description="This is my first project where I've implemented a SpringBoot based BackEnd for a POS system. It utilizes Spring Boot and Spring Data JPA to handle business logic and data persistence, providing a robust and scalable solution for managing transactions and inventory."
-          technologies={["SpringBoot", "Spring Data JPA", "MySQL"]}
-          githubLink="https://github.com/Ravindu-Dinushan/POS-BackEnd-SpringBoot"
-          images={posBackendSpringBootImages}
-          currentImageIndex={currentPOSBackendSpringBootImage}
-          onNextImage={() => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length)}
-          onPreviousImage={() => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length)}
-          onClickImage={() => openModal('posBackendSpringBoot')} />
 
         <ProjectCard projectName="Student Management System - CLI"
           description="This is a Command Line Interface (CLI) application designed to manage student information efficiently. This is the Course-Work of Programming Fundermentals."
@@ -738,77 +595,62 @@ export function Projects() {
         imageSrc={
           currentProject === 'gym' ? GymImage[currentGymImage] :
             currentProject === 'shoeShop' ? shoeShopImages[currentShoeShopImage] :
-              currentProject === 'computerShop' ? computerShopImages[currentComputerShopImage] :
-                currentProject === 'hostelManagement' ? hostelManagementImages[currentHostelManagementImage] :
-                  currentProject === 'chatApplication' ? chatApplicationImages[currentChatApplicationImage] :
-                    currentProject === 'shoeShopLanding' ? shoeShopLandingImages[currentShoeShopLandingImage] :
-                      currentProject === 'portfolio' ? portfolioImages[currentPortfolioImage] :
-                        currentProject === 'linkedinClone' ? linkedInCloneImages[currentLinkedinImage] :
-                          currentProject === 'mernPOS' ? mernPOSImages[currentMernPOSImage] :
-                            currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
-                              currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
-                                currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] :
-                                  currentProject === 'posFrontend' ? posFrontendImages[currentPOSFrontendImage] :
-                                    currentProject === 'posBackendSpring' ? posBackendSpringImages[currentPOSBackendSpringImage] :
-                                      currentProject === 'posBackendSpringBoot' ? posBackendSpringBootImages[currentPOSBackendSpringBootImage] :
-                                        currentProject === 'todo' ? ToDoImages[currentToDoImage] :
-                                          currentProject === 'currency' ? CurrencyImages[currentCurrencyImage] :
-                                            currentProject === 'carRental' ? CarRentalImages[currentCarRentalImage] :
-                                              currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
-                                                currentProject === 'user' ? UserImages[currentUserImage] :
-                                                  currentProject === 'aora' ? AoraImages[currentAoraImage] :
-                                                    currentProject === 'highway' ? HighwayImages[currentHighwayImage] :
-                                                    currentProject === 'javaeePOS' ? javaeePOSImages[currentJavaEEPOSImage] : ''}
+              // currentProject === 'computerShop' ? computerShopImages[currentComputerShopImage] :
+                currentProject === 'portfolio' ? portfolioImages[currentPortfolioImage] :
+                  currentProject === 'connect4' ? connect4Images[currentConnect4Image] :
+                    currentProject === 'portfoliov2' ? portfolioV2Images[currentPortfolioV2Image] :
+                      currentProject === 'studentCLI' ? studentCLIImages[currentStudentCLIImage] :
+                        currentProject === 'todo' ? ToDoImages[currentToDoImage] :
+                          currentProject === 'currency' ? CurrencyImages[currentCurrencyImage] :
+                            currentProject === 'carRental' ? CarRentalImages[currentCarRentalImage] :
+                              currentProject === 'ecommerce' ? ECommerceImages[currentECommerceImage] :
+                                currentProject === 'user' ? UserImages[currentUserImage] :
+                                  currentProject === 'aora' ? AoraImages[currentAoraImage] :
+                                    currentProject === 'highway' ? HighwayImages[currentHighwayImage] :
+                                      currentProject === 'SPA' ? SPAImages[currentSPAImage] :
+                                        currentProject === 'hostel' ? HostelImages[currentHostelImage] :
+                                          currentProject === 'calc' ? CalcImages[currentCalcImage] :
+                                            currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev + 1) % shoeShopImages.length) :
-              currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
-                currentProject === 'hostelManagement' ? () => setCurrentHostelManagementImage((prev) => (prev + 1) % hostelManagementImages.length) :
-                  currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length) :
-                    currentProject === 'shoeShopLanding' ? () => setCurrentShoeShopLandingImage((prev) => (prev + 1) % shoeShopLandingImages.length) :
-                      currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length) :
-                        currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev + 1) % linkedInCloneImages.length) :
-                          currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev + 1) % mernPOSImages.length) :
-                            currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
-                              currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
-                                currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) :
-                                  currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev + 1) % posFrontendImages.length) :
-                                    currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev + 1) % posBackendSpringImages.length) :
-                                      currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev + 1) % posBackendSpringBootImages.length) :
-                                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length) :
-                                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length) :
-                                            currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length) :
-                                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
-                                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev + 1) % UserImages.length) :
-                                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev + 1) % AoraImages.length) :
-                                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev + 1) % HighwayImages.length) :
-                                                      currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev + 1) % javaeePOSImages.length) : () => { }}
+              // currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev + 1) % computerShopImages.length) :
+                currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev + 1) % portfolioImages.length) :
+                  currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev + 1) % connect4Images.length) :
+                    currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev + 1) % portfolioV2Images.length) :
+                      currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev + 1) % studentCLIImages.length) :
+                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev + 1) % ToDoImages.length) :
+                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev + 1) % CurrencyImages.length) :
+                            currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev + 1) % CarRentalImages.length) :
+                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev + 1) % ECommerceImages.length) :
+                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev + 1) % UserImages.length) :
+                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev + 1) % AoraImages.length) :
+                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev + 1) % HighwayImages.length) :
+                                      currentProject === 'SPA' ? () => setCurrentSPAImage((prev) => (prev + 1) % SPAImages.length) :
+                                        currentProject === 'hostel' ? () => setCurrentHostelImage((prev) => (prev + 1) % HostelImages.length) :
+                                          currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
+                                            currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev + 1) % POSImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
             currentProject === 'shoeShop' ? () => setCurrentShoeShopImage((prev) => (prev - 1 + shoeShopImages.length) % shoeShopImages.length) :
-              currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
-                currentProject === 'hostelManagement' ? () => setCurrentHostelManagementImage((prev) => (prev - 1 + hostelManagementImages.length) % hostelManagementImages.length) :
-                  currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length) :
-                    currentProject === 'shoeShopLanding' ? () => setCurrentShoeShopLandingImage((prev) => (prev - 1 + shoeShopLandingImages.length) % shoeShopLandingImages.length) :
-                      currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length) :
-                        currentProject === 'linkedinClone' ? () => setCurrentLinkedinImage((prev) => (prev - 1 + linkedInCloneImages.length) % linkedInCloneImages.length) :
-                          currentProject === 'mernPOS' ? () => setCurrentMernPOSImage((prev) => (prev - 1 + mernPOSImages.length) % mernPOSImages.length) :
-                            currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
-                              currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
-                                currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) :
-                                  currentProject === 'posFrontend' ? () => setCurrentPOSFrontendImage((prev) => (prev - 1 + posFrontendImages.length) % posFrontendImages.length) :
-                                    currentProject === 'posBackendSpring' ? () => setCurrentPOSBackendSpringImage((prev) => (prev - 1 + posBackendSpringImages.length) % posBackendSpringImages.length) :
-                                      currentProject === 'posBackendSpringBoot' ? () => setCurrentPOSBackendSpringBootImage((prev) => (prev - 1 + posBackendSpringBootImages.length) % posBackendSpringBootImages.length) :
-                                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length) :
-                                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length) :
-                                            currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length) :
-                                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
-                                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length) :
-                                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev - 1 + AoraImages.length) % AoraImages.length) :
-                                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev - 1 + HighwayImages.length) % HighwayImages.length) :
-                                                      currentProject === 'javaeePOS' ? () => setCurrentJavaEEPOSImage((prev) => (prev - 1 + javaeePOSImages.length) % javaeePOSImages.length) : () => { }} />
+              // currentProject === 'computerShop' ? () => setCurrentComputerShopImage((prev) => (prev - 1 + computerShopImages.length) % computerShopImages.length) :
+                currentProject === 'portfolio' ? () => setCurrentPortfolioImage((prev) => (prev - 1 + portfolioImages.length) % portfolioImages.length) :
+                  currentProject === 'connect4' ? () => setCurrentConnect4Image((prev) => (prev - 1 + connect4Images.length) % connect4Images.length) :
+                    currentProject === 'portfoliov2' ? () => setCurrentPortfolioV2Image((prev) => (prev - 1 + portfolioV2Images.length) % portfolioV2Images.length) :
+                      currentProject === 'studentCLI' ? () => setCurrentStudentCLIImage((prev) => (prev - 1 + studentCLIImages.length) % studentCLIImages.length) :
+                        currentProject === 'todo' ? () => setCurrentToDoImage((prev) => (prev - 1 + ToDoImages.length) % ToDoImages.length) :
+                          currentProject === 'currency' ? () => setCurrentCurrencyImage((prev) => (prev - 1 + CurrencyImages.length) % CurrencyImages.length) :
+                            currentProject === 'carRental' ? () => setCurrentCarRentalImage((prev) => (prev - 1 + CarRentalImages.length) % CarRentalImages.length) :
+                              currentProject === 'ecommerce' ? () => setCurrentECommerceImage((prev) => (prev - 1 + ECommerceImages.length) % ECommerceImages.length) :
+                                currentProject === 'user' ? () => setCurrentUserImage((prev) => (prev - 1 + UserImages.length) % UserImages.length) :
+                                  currentProject === 'aora' ? () => setCurrentAoraImage((prev) => (prev - 1 + AoraImages.length) % AoraImages.length) :
+                                    currentProject === 'highway' ? () => setCurrentHighwayImage((prev) => (prev - 1 + HighwayImages.length) % HighwayImages.length) :
+                                      currentProject === 'SPA' ? () => setCurrentSPAImage((prev) => (prev - 1 + SPAImages.length) % SPAImages.length) :
+                                        currentProject === 'hostel' ? () => setCurrentHostelImage((prev) => (prev - 1 + HostelImages.length) % HostelImages.length) :
+                                          currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev - 1 + CalcImages.length) % CalcImages.length) :
+                                            currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
 
     </div>
   );
