@@ -64,8 +64,11 @@ import ShoeShop12 from '../../../assets/images/projects/Shoe-Shop/Screenshot 202
 import ShoeShop13 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224742.png';
 import ShoeShop14 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224754.png';
 
+// Usre Register Form
+import User1 from '../../../assets/images/projects/ReduxCRUD/Screenshot 2024-11-01 085711.png';
+import User2 from '../../../assets/images/projects/ReduxCRUD/Screenshot 2024-11-01 085742.png';
+
 // Computer Shop Management System
-// import ComputerShopTheme from '../../../assets/images/projects/Computer-Shop/Theme.png';
 import ComputerShopLogin from '../../../assets/images/projects/Computer-Shop/Login.png';
 import ComputerShopAdminDashboard from '../../../assets/images/projects/Computer-Shop/Admin-Dashboard.png';
 import ComputerShopCustomer from '../../../assets/images/projects/Computer-Shop/Customer.png';
