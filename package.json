@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ravindudinushan.github.oi/My-Portfolio-V2",
   "name": "my-portfolio-v2",
   "version": "2.0.0",
   "author": "Ravindu Dinushan",
@@ -6,13 +7,12 @@
   "private": true,
   "type": "module",
   "description": "Discover My Personal Portfolio Using React",
-  "homepage": "",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
