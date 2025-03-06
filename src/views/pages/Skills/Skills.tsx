@@ -1,4 +1,7 @@
-import { BiLogoSpringBoot } from "react-icons/bi";
+import { BiLogoSpringBoot, BiLogoMongodb, BiLogoPostgresql } from "react-icons/bi";
+import { SiExpress, SiHibernate, SiMysql } from "react-icons/si";
+import { FaAws, FaDocker, FaStripe } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export function Skills() {
   return (
@@ -20,6 +23,10 @@ export function Skills() {
           <BiLogoSpringBoot
             className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
             title="Spring Boot"
+          />
+          <SiExpress
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Express.js"
           />
           <i
             className="fab fa-js-square fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300"
@@ -101,6 +108,38 @@ export function Skills() {
             title="npm"
           ></i>{" "}
           {/* npm */}
+          <BiLogoMongodb
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="MongoDB"
+          />
+          <SiHibernate
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Hibernate"
+          />
+          <SiMysql
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="MySQL"
+          />
+          <BiLogoPostgresql 
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Postgresql"
+          />
+          <FaAws 
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="AWS"
+          />
+          <RiTailwindCssFill 
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Tailwind CSS"
+          />
+          <FaDocker 
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Docker"
+          />
+          <FaStripe 
+            className="text-white hover:text-primary hover:scale-105 transition-transform duration-300 text-6xl sm:text-6xl"
+            title="Stripe"
+          />
         </div>
       </div>
     </div>
