@@ -14,13 +14,6 @@ export function Home() {
           and discover the projects I've been working on.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          {/* <a
-            href="/My-Portfolio-V2/about"
-            className="bg-primary text-bg px-6 py-3 rounded-lg font-semibold shadow-lg 
-                    hover:scale-105 transition duration-300"
-          >
-            About Me
-          </a> */}
           <Link
               to="/My-Portfolio-V2/about"
               className="bg-primary text-bg px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition duration-300"
