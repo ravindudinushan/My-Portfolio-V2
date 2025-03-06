@@ -48,6 +48,24 @@ import ECommerce18 from '../../../assets/images/projects/E-Commerce/Screenshot 2
 import ECommerce19 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222705.png';
 import ECommerce20 from '../../../assets/images/projects/E-Commerce/Screenshot 2024-09-01 222737.png';
 
+//E-Commerce Website with Payment Gateway
+import Commerce1 from '../../../assets/images/projects/ECommerce/1.png';
+import Commerce2 from '../../../assets/images/projects/ECommerce/2.png';
+import Commerce3 from '../../../assets/images/projects/ECommerce/3.png';
+import Commerce4 from '../../../assets/images/projects/ECommerce/4.png';
+import Commerce5 from '../../../assets/images/projects/ECommerce/5.png';
+import Commerce6 from '../../../assets/images/projects/ECommerce/6.png';
+import Commerce7 from '../../../assets/images/projects/ECommerce/7.png';
+import Commerce8 from '../../../assets/images/projects/ECommerce/8.png';
+import Commerce9 from '../../../assets/images/projects/ECommerce/9.png';
+import Commerce10 from '../../../assets/images/projects/ECommerce/10.png';
+import Commerce11 from '../../../assets/images/projects/ECommerce/11.png';
+import Commerce12 from '../../../assets/images/projects/ECommerce/12.png';
+import Commerce13 from '../../../assets/images/projects/ECommerce/13.png';
+import Commerce14 from '../../../assets/images/projects/ECommerce/14.png';
+import Commerce15 from '../../../assets/images/projects/ECommerce/15.png';
+import Commerce16 from '../../../assets/images/projects/ECommerce/16.png';
+
 // Shoe Shop Management System
 import ShoeShop1 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224123.png';
 import ShoeShop2 from '../../../assets/images/projects/Shoe-Shop/Screenshot 2024-09-01 224143.png';
@@ -238,6 +256,26 @@ const ECommerceImages = [
   ECommerce18,
   ECommerce19,
   ECommerce20,
+];
+
+const CommerceImages = [
+  // E-Commerce website with Payment Gateway
+  Commerce1,
+  Commerce2,
+  Commerce3,
+  Commerce4,
+  Commerce5,
+  Commerce6,
+  Commerce7,
+  Commerce8,
+  Commerce9,
+  Commerce10,
+  Commerce11,
+  Commerce12,
+  Commerce13,
+  Commerce14,
+  Commerce15,
+  Commerce16,
 ];
 
 const shoeShopImages = [
@@ -431,6 +469,7 @@ export function Projects() {
   const [currentConnect4Image, setCurrentConnect4Image] = useState(0);
   const [currentPortfolioV2Image, setCurrentPortfolioV2Image] = useState(0);
   const [currentStudentCLIImage, setCurrentStudentCLIImage] = useState(0);
+  const [currentCommerceImage, setCurrentCommerceImage] = useState(0);
   const [currentPOSImage, setCurrentPOSImage] = useState(0);
 
   const openModal = (projectType) => {
@@ -446,8 +485,22 @@ export function Projects() {
 
       <div className="max-w-7xl px-6 space-y-32 mt-20">
 
+      <ProjectCard projectName="E-Commerce Website with Payment Gateway"
+          description="A feature-rich e-commerce platform built with the MERN stack (MongoDB, Express.js, React, and Node.js), offering a seamless shopping experience with secure payment 
+          options. It integrates JWT authentication for robust user security and supports both Stripe and Cash on Delivery (COD) payments. Styled with Tailwind CSS, the platform delivers 
+          a modern, responsive, and high-performance interface. Key features include user authentication, product browsing, a shopping cart, and a secure checkout process, ensuring a 
+          smooth experience across all devices."
+          technologies={["React", "NodeJs", "ExpressJs", "MongoDB", "Tailwind CSS", "COD", "Stripe", "Vite", "JSON Web Token (JWT)"]}
+          githubLink="https://github.com/ravindudinushan/E-Commerce-Website"
+          images={CommerceImages}
+          currentImageIndex={currentCommerceImage}
+          onNextImage={() => setCurrentCommerceImage((prev) => (prev + 1) % CommerceImages.length)}
+          onPreviousImage={() => setCurrentCommerceImage((prev) => (prev - 1 + CommerceImages.length) % CommerceImages.length)}
+          onClickImage={() => openModal('commerce')} />
+
       <ProjectCard projectName="Uber Clone Mobile App"
-          description="The Uber Clone is a feature-rich, full-stack mobile application built with React Native, Expo, PostgreSQL, and Stripe. It provides a seamless ride-booking experience with real-time location tracking, secure payments, and an intuitive user interface."
+          description="The Uber Clone is a feature-rich, full-stack mobile application built with React Native, Expo, PostgreSQL, and Stripe. It provides a seamless ride-booking experience 
+          with real-time location tracking, secure payments, and an intuitive user interface."
           technologies={["React-Native", "Expo", "NodeJS", "Clerk", "Typescript", "Tailwind CSS", "Postgre SQL", "Stripe", "Geoapify Api", "Google Map Api", "Google Direction Api"]}
           githubLink="https://github.com/ravindudinushan/Uber-Clone-App"
           images={UberImages}
@@ -721,7 +774,8 @@ export function Projects() {
                                             currentProject === 'thogakade' ? ThogakadeImages[currentThogakadeImage] :
                                               currentProject === 'chatApplication' ? chatApplicationImages[currentChatApplicationImage] :
                                                 currentProject === 'uber' ? UberImages[currentUberImage] :
-                                                  currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
+                                                  currentProject === 'commerce' ? CommerceImages[currentCommerceImage] :
+                                                    currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -744,7 +798,8 @@ export function Projects() {
                                             currentProject === 'thogakade' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
                                               currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length) :
                                                 currentProject === 'uber' ? () => setCurrentUberImage((prev) => (prev + 1) % UberImages.length) :
-                                                  currentProject === 'POS' ? () => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length) : () => { }}
+                                                  currentProject === 'commerce' ? () => setCurrentCommerceImage((prev) => (prev + 1) % CommerceImages.length) :
+                                                    currentProject === 'POS' ? () => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -767,7 +822,8 @@ export function Projects() {
                                             currentProject === 'thogakade' ? () => setCurrentThogakadeImage((prev) => (prev - 1 + ThogakadeImages.length) % ThogakadeImages.length) :
                                               currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length) :
                                                 currentProject === 'uber' ? () => setCurrentUberImage((prev) => (prev - 1 + UberImages.length) % UberImages.length) :
-                                                  currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
+                                                  currentProject === 'commerce' ? () => setCurrentCommerceImage((prev) => (prev - 1 + CommerceImages.length) % CommerceImages.length) :
+                                                    currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
 
     </div>
   );
