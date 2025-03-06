@@ -8,7 +8,7 @@ export function Home() {
                 <p className="text-lg sm:text-xl max-w-xl sm:max-w-2xl mx-auto text-gray-200">Explore my work,
                     learn more about my skills,<br className="hidden sm:block" />and discover the projects I've been working on.</p>
                 <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="https://ravindudinushan.github.io/My-Portfolio-V2/about" className="bg-primary text-bg px-6 py-3 rounded-lg font-semibold shadow-lg 
+                    <a href="/My-Portfolio-V2/about" className="bg-primary text-bg px-6 py-3 rounded-lg font-semibold shadow-lg 
                     hover:scale-105 transition duration-300">About Me</a>
                     <a href={CV} download="Ravindu-Dinushan-Resume" className="bg-bg text-primary border 
                     border-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition duration-300">Download CV</a>
