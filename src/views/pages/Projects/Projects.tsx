@@ -624,7 +624,7 @@ export function Projects() {
           description="The Rio Ice-Cream Shop Management System is a comprehensive standalone application built using JavaFX. It offers an 
           intuitive interface for managing users, customers, employees, suppliers, inventory, Event, Delivery and orders. The system also integrates Jasper 
           Reports for generating detailed reports, providing an efficient solution for managing various aspects of a computer shop's operations."
-          technologies={["Java", "JavaFX", "Maven", "MySQL", "Jasper Report", "Layerd","JDBC"]}
+          technologies={["Java", "JavaFX", "Maven", "MySQL", "Jasper Report", "Layered","JDBC"]}
           githubLink="https://github.com/ravindudinushan/Project-Rio-Layered-"
           images={RioImages}
           currentImageIndex={currentRioImage}
