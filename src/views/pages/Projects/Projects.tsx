@@ -472,7 +472,7 @@ export function Projects() {
   const [currentCommerceImage, setCurrentCommerceImage] = useState(0);
   const [currentPOSImage, setCurrentPOSImage] = useState(0);
 
-  const openModal = (projectType) => {
+  const openModal = (projectType: any) => {
     setIsModalOpen(true);
     setCurrentProject(projectType);
   };
