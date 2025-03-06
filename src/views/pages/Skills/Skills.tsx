@@ -14,7 +14,7 @@ export function Skills() {
           Here are some of the technologies and tools I have experience with. I
           enjoy learning new things and continuously improving my skill set.
         </p>
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
           <i
             className="fab fa-java fa-4x sm:fa-5x hover:text-primary hover:scale-105 transition-transform duration-300"
             title="Java"
