@@ -82,6 +82,22 @@ import Aora10 from '../../../assets/images/projects/Aora/10.jpg';
 import Aora11 from '../../../assets/images/projects/Aora/11.jpg';
 import Aora12 from '../../../assets/images/projects/Aora/12.jpg';
 
+// Uber clone mobile app
+import Uber1 from '../../../assets/images/projects/Uber/1.jpg';
+import Uber2 from '../../../assets/images/projects/Uber/2.jpg';
+import Uber3 from '../../../assets/images/projects/Uber/3.jpg';
+import Uber4 from '../../../assets/images/projects/Uber/4.jpg';
+import Uber5 from '../../../assets/images/projects/Uber/5.jpg';
+import Uber6 from '../../../assets/images/projects/Uber/6.jpg';
+import Uber7 from '../../../assets/images/projects/Uber/7.jpg';
+import Uber8 from '../../../assets/images/projects/Uber/8.jpg';
+import Uber9 from '../../../assets/images/projects/Uber/9.jpg';
+import Uber10 from '../../../assets/images/projects/Uber/10.jpg';
+import Uber11 from '../../../assets/images/projects/Uber/11.jpg';
+import Uber12 from '../../../assets/images/projects/Uber/12.jpg';
+import Uber13 from '../../../assets/images/projects/Uber/13.jpg';
+import Uber14 from '../../../assets/images/projects/Uber/14.jpg';
+
 // Highway ticket management system
 import Highway1 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090620.png';
 import Highway2 from '../../../assets/images/projects/HighwayTicketManagementSystem/Screenshot 2024-11-01 090656.png';
@@ -284,6 +300,24 @@ const AoraImages = [
   Aora12,
 ];
 
+const UberImages = [
+// Uber clone mobile app
+  Uber1,
+  Uber2,
+  Uber3,
+  Uber4,
+  Uber5,
+  Uber6,
+  Uber7,
+  Uber8,
+  Uber9,
+  Uber10,
+  Uber11,
+  Uber12,
+  Uber13,
+  Uber14,
+];
+
 const POSImages = [
   // POS
   POS1,
@@ -385,6 +419,7 @@ export function Projects() {
   const [currentShoeShopImage, setCurrentShoeShopImage] = useState(0);
   const [currentUserImage, setCurrentUserImage] = useState(0);
   const [currentAoraImage, setCurrentAoraImage] = useState(0);
+  const [currentUberImage, setCurrentUberImage] = useState(0);
   const [currentHighwayImage, setCurrentHighwayImage] = useState(0);
   const [currentSPAImage, setCurrentSPAImage] = useState(0);
   const [currentHostelImage, setCurrentHostelImage] = useState(0);
@@ -410,6 +445,16 @@ export function Projects() {
       <h1 className="text-4xl text-primary font-bold text-center text-neonBlue mb-10 fixed top-0 left-0 right-0 z-10 mt-20 bg-bg pb-5">My Projects</h1>
 
       <div className="max-w-7xl px-6 space-y-32 mt-20">
+
+      <ProjectCard projectName="Uber Clone Mobile App"
+          description="The Uber Clone is a feature-rich, full-stack mobile application built with React Native, Expo, PostgreSQL, and Stripe. It provides a seamless ride-booking experience with real-time location tracking, secure payments, and an intuitive user interface."
+          technologies={["React-Native", "Expo", "NodeJS", "Clerk", "Typescript", "Tailwind CSS", "Postgre SQL", "Stripe", "Geoapify Api", "Google Map Api", "Google Direction Api"]}
+          githubLink="https://github.com/ravindudinushan/Uber-Clone-App"
+          images={UberImages}
+          currentImageIndex={currentUberImage}
+          onNextImage={() => setCurrentUberImage((prev) => (prev + 1) % UberImages.length)}
+          onPreviousImage={() => setCurrentUberImage((prev) => (prev - 1 + UberImages.length) % UberImages.length)}
+          onClickImage={() => openModal('uber')} />
 
         <ProjectCard projectName="React Gym App"
           description="The Gym App project is a robust and efficient system designed to help exercise. Built with React, Tailwind CSS and 
@@ -675,7 +720,8 @@ export function Projects() {
                                           currentProject === 'calc' ? CalcImages[currentCalcImage] :
                                             currentProject === 'thogakade' ? ThogakadeImages[currentThogakadeImage] :
                                               currentProject === 'chatApplication' ? chatApplicationImages[currentChatApplicationImage] :
-                                                currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
+                                                currentProject === 'uber' ? UberImages[currentUberImage] :
+                                                  currentProject === 'POS' ? POSImages[currentPOSImage] : ''}
 
         onNext={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev + 1) % GymImage.length) :
@@ -697,7 +743,8 @@ export function Projects() {
                                           currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
                                             currentProject === 'thogakade' ? () => setCurrentCalcImage((prev) => (prev + 1) % CalcImages.length) :
                                               currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev + 1) % chatApplicationImages.length) :
-                                                currentProject === 'POS' ? () => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length) : () => { }}
+                                                currentProject === 'uber' ? () => setCurrentUberImage((prev) => (prev + 1) % UberImages.length) :
+                                                  currentProject === 'POS' ? () => setCurrentThogakadeImage((prev) => (prev + 1) % ThogakadeImages.length) : () => { }}
 
         onPrevious={
           currentProject === 'gym' ? () => setcurrentGymImage((prev) => (prev - 1 + GymImage.length) % GymImage.length) :
@@ -719,7 +766,8 @@ export function Projects() {
                                           currentProject === 'calc' ? () => setCurrentCalcImage((prev) => (prev - 1 + CalcImages.length) % CalcImages.length) :
                                             currentProject === 'thogakade' ? () => setCurrentThogakadeImage((prev) => (prev - 1 + ThogakadeImages.length) % ThogakadeImages.length) :
                                               currentProject === 'chatApplication' ? () => setCurrentChatApplicationImage((prev) => (prev - 1 + chatApplicationImages.length) % chatApplicationImages.length) :
-                                                currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
+                                                currentProject === 'uber' ? () => setCurrentUberImage((prev) => (prev - 1 + UberImages.length) % UberImages.length) :
+                                                  currentProject === 'POS' ? () => setCurrentPOSImage((prev) => (prev - 1 + POSImages.length) % POSImages.length) : () => { }} />
 
     </div>
   );
