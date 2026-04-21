@@ -29,7 +29,7 @@ export function Contacts() {
                 <div className="mt-8">
                     <p className="text-base md:text-lg mb-4">Or connect with me on social media</p>
                     <div className="flex justify-center space-x-4 md:space-x-6">
-                        <a href="https://www.linkedin.com/in/ravindu-dinushan-60709227b/" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/in/ravindu-dinushan/" target="_blank" rel="noopener noreferrer"
                             className="text-primary hover:scale-105 transition duration-300 text-lg">
                             <i className="fab fa-linkedin-in fa-2x"></i>
                         </a>
